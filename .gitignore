@@ -1,4 +1,9 @@
-./New_code/.idea
-./New_code/.Rproj.user
-./New_code/__pycache__
-./New_code/venv
+New_code/.idea/
+New_code/.Rproj.user/
+New_code/__pycache__/
+New_code/venv/
+
+data_old/agraggate_data_all_months.csv
+Map/new_maps/Rio_Paraopeba/bacia_rio_paraopeba.dbf
+data_old/PNAD/PNADC_042024.zip
+data_old/PNAD/PNADC_042024/PNADC_042024.txt
