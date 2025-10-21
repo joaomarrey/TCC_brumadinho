@@ -1,0 +1,4 @@
+"0","#matrix_coeftestmod2_log_id <- coeftest(mod2_log_id, vcovHC(mod2_log_id, type = ""HC1""), "
+"0","#                                       parm=c(""tr2016"", ""tr2017"", ""tr2018"", ""tr2019"", ""tr2020"", ""tr2021"","
+"0","#                                              ""tr2022""))"
+"0","#print(matrix_coeftestmod2_log_id)"

@@ -1,0 +1,3 @@
+"0","#mod1_nivel <- lm(avg_wage_dec~treated_group+ano+treated_after_treatment, data = pdata)"
+"0","#stargazer(mod1_nivel, keep = ""treated_after_treatment"", type=""text"", "
+"0","#          digits = 6) "

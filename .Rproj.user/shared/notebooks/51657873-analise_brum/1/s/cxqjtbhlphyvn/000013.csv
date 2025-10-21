@@ -1,0 +1,27 @@
+"0","out <- att_gt(yname = ""log_avg_wage_dec"","
+"0","              gname = ""gname"","
+"0","              idname = ""id_municipio_numer"","
+"0","              tname = ""ano_numer"","
+"0","              xformla = ~pop,"
+"0","              data = pdata_cov,"
+"0","              est_method = ""reg"""
+"0","              )"
+"2","Warning: Be aware that there are some small groups in your dataset.
+  Check groups: 2019."
+"0","summary(out)"
+"1","
+"
+"1","Call:
+"
+"1","att_gt(yname = ""log_avg_wage_dec"", tname = ""ano_numer"", idname = ""id_municipio_numer"", 
+"
+"1","    gname = ""gname"", xformla = ~pop, data = pdata_cov, est_method = ""reg"")
+"
+"1","
+"
+"1","Reference: Callaway, Brantly and Pedro H.C. Sant'Anna.  ""Difference-in-Differences with Multiple Time Periods."" Journal of Econometrics, Vol. 225, No. 2, pp. 200-230, 2021. <https://doi.org/10.1016/j.jeconom.2020.12.001>, <https://arxiv.org/abs/1803.09015> 
+"
+"1","
+"
+"1","Group-Time Average Treatment Effects:
+"

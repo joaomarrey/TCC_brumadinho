@@ -1,0 +1,6 @@
+"0","#mod2_cr_se <- sqrt(diag(vcovHC(mod2_log_id, cluster = ~ id_municipio)))  # robust standard errors"
+"0","#stargazer(mod2_log_id, keep = c(""tr2015"", ""tr2016"", ""tr2017"", "
+"0","#                                #""tr2018"", "
+"0","#                                ""tr2019"", ""tr2020"", ""tr2021"", ""tr2022""),"
+"0","#          type=""text"", se=list(mod2_cr_se), "
+"0","#          digits = 6, notes=""Cluster Robust standard errors in parenthesis"")  "

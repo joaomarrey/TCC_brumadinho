@@ -1,0 +1,195 @@
+```{r}
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # to produce nice graphics
+library(stargazer)    # to produce nice results tables
+library(haven)        # to import stata file
+library(ggplot2)      # for graphs
+library(AER)          # access to HS robust standard errors
+library(plm)          # for panel data methods
+library(sandwich)     # for cluster robust se
+library(lmtest)
+library(coefplot)     # to create coefficient plots
+library("GGally")
+library(did)
+
+```
+
+
+
+```{r}
+matching_prelim_mar <- read.csv("C:/Users/joaom/OneDrive/Área de Trabalho/CODE/Trab Economia Trab/Data/matching_nocov_mar.csv")
+
+```
+
+
+
+```{r}
+matching_prelim_mar$ano = as_factor(matching_prelim_mar$ano)
+matching_prelim_mar$treated_group = as_factor(matching_prelim_mar$treated_group)
+matching_prelim_mar$treated_after_treatment = as_factor(matching_prelim_mar$treated_after_treatment)
+
+matching_prelim_mar$log_avg_wage_dec = log(matching_prelim_mar$avg_wage_dec)
+matching_prelim_mar$log_n_employ_dec = log(matching_prelim_mar$n_employ_dec)
+```
+
+
+
+```{r}
+pdata_mar <- pdata.frame(matching_prelim_mar, index = c("id_municipio","ano"))
+pdata_mar$ano_numer <- as.numeric(as.character(pdata_mar$ano))
+pdata_mar$id_municipio_numer <- as.numeric(as.character(pdata_mar$id_municipio))
+pdata_mar$treated_group_numer <- as.numeric(as.character(pdata_mar$treated_group))
+
+pdata_mar$gname = pdata_mar$treated_group_numer * 2015
+
+summary(pdata_mar)
+```
+
+
+
+```{r}
+pdata_mar <- pdata_mar %>%  mutate(
+                           #tr2010 = (ano=="2010")*(treated_group=="1"),
+                           tr2011 = (ano=="2011")*(treated_group=="1"),
+                           tr2012 = (ano=="2012")*(treated_group=="1"),
+                           tr2013 = (ano=="2013")*(treated_group=="1"),
+                           tr2014 = (ano=="2014")*(treated_group=="1"),
+                           tr2015 = (ano=="2015")*(treated_group=="1"),
+                           tr2016 = (ano=="2016")*(treated_group=="1"),
+                           tr2017 = (ano=="2017")*(treated_group=="1"),
+                           tr2018 = (ano=="2018")*(treated_group=="1"),
+                           tr2019 = (ano=="2019")*(treated_group=="1"),
+                           tr2020 = (ano=="2020")*(treated_group=="1"),
+                           tr2021 = (ano=="2021")*(treated_group=="1"),
+                           tr2022 = (ano=="2022")*(treated_group=="1"))
+```
+
+
+
+```{r}
+is.pbalanced(pdata_mar)
+```
+
+
+
+```{r}
+mod2_log_id <- lm(log_avg_wage_dec~id_municipio+ano+
+                    tr2011+
+                    tr2012+tr2013+
+                    #tr2014+
+                    tr2015+
+                    tr2016+tr2017+tr2018+tr2019+tr2020+tr2021+tr2022,
+                  data = pdata_mar)
+
+stargazer(mod2_log_id, keep = c(
+                                "tr2012", "tr2013", "tr2014",
+                                "tr2015", "tr2016", "tr2017", "tr2018", 
+                                "tr2019", "tr2020", "tr2021", "tr2022"
+                                ),        
+          type="text", 
+          digits = 6) 
+```
+
+
+
+```{r}
+summary(mod2_log_id)
+```
+
+
+
+```{r}
+mod2_ro_se <- sqrt(diag(vcovHC(mod2_log_id, type = "HC1")))  # robust standard errors
+stargazer(mod2_log_id, keep = c("tr2012", "tr2013", "tr2014",
+                                "tr2015", "tr2016", "tr2017", "tr2018", 
+                                "tr2019", "tr2020", "tr2021", "tr2022"),
+          type="text", se=list(mod2_ro_se), 
+          digits = 6, notes="HS Robust standard errors in parenthesis") 
+```
+
+
+
+```{r}
+mod2_cr_se <- sqrt(diag(vcovHC(mod2_log_id, cluster = ~ id_municipio)))  # robust standard errors
+stargazer(mod2_log_id, keep = c("tr2012", "tr2013", "tr2014",
+                                "tr2015", "tr2016", "tr2017", "tr2018", 
+                                "tr2019", "tr2020", "tr2021", "tr2022"),
+          type="text", se=list(mod2_cr_se), 
+          digits = 6, notes="Cluster Robust standard errors in parenthesis")  
+```
+
+
+
+```{r}
+# errado pq n esta com variancia corrigida
+coefplot(mod2_log_id, coefficients = c("tr2012", "tr2013", "tr2014",
+                                "tr2015", "tr2016", "tr2017", "tr2018", 
+                                "tr2019", "tr2020", "tr2021", "tr2022"), innerCI = 0, horizontal = TRUE)
+```
+
+
+
+```{r}
+coefficients <- coef(mod2_log_id)[c("tr2012", "tr2013", "tr2014",
+                                "tr2015", "tr2016", "tr2017", "tr2018", 
+                                "tr2019", "tr2020", "tr2021", "tr2022")]
+print(coefficients)
+```
+
+
+
+```{r}
+std_errors <- mod2_ro_se[c("tr2012", "tr2013", "tr2014",
+                                "tr2015", "tr2016", "tr2017", "tr2018", 
+                                "tr2019", "tr2020", "tr2021", "tr2022")]
+
+print(std_errors)
+```
+
+
+
+```{r}
+# Create a data frame for plotting
+plot_data <- data.frame(
+  Coefficient = names(coefficients),
+  Estimate = coefficients,
+  Std_Error = std_errors
+)
+
+# Plot coefficients and confidence intervals
+library(ggplot2)
+
+
+ggplot(plot_data, aes(x = Coefficient, y = Estimate, ymin = Estimate - 1.96 * Std_Error,
+                                           ymax = Estimate + 1.96 * Std_Error)) +
+  geom_point(size = 3) +
+  geom_errorbar(width = 0.2) +
+  labs(title = "Coefficients and Confidence Intervals",
+       x = "Coefficient",
+       y = "Estimate") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+
+```
+
+
+
+```{r}
+out <- att_gt(yname = "log_avg_wage_dec",
+              gname = "gname",
+              idname = "id_municipio_numer",
+              tname = "ano_numer",
+              xformla = ~1,
+              data = pdata_mar,
+              est_method = "reg"
+              )
+
+summary(out)
+```
+
+
+
+```{r}
+ggdid(out)
+```
+

@@ -1,0 +1,6 @@
+"0","matching_prelim_mar$ano = as_factor(matching_prelim_mar$ano)"
+"0","matching_prelim_mar$treated_group = as_factor(matching_prelim_mar$treated_group)"
+"0","matching_prelim_mar$treated_after_treatment = as_factor(matching_prelim_mar$treated_after_treatment)"
+"0",""
+"0","matching_prelim_mar$log_avg_wage_dec = log(matching_prelim_mar$avg_wage_dec)"
+"0","matching_prelim_mar$log_n_employ_dec = log(matching_prelim_mar$n_employ_dec)"

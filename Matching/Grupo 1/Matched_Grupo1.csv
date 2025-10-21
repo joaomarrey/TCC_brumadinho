@@ -1,0 +1,854 @@
+,Nome,Codigo,Grupo 1 controle,Grupo 1 tratamento
+0,Ouro Branco,314590.0,1.0,0
+1,Congonhas,311800.0,1.0,0
+2,Itabirito,313190.0,1.0,0
+3,Itaú de Minas,313375.0,1.0,0
+4,Pirapetinga,315110.0,1.0,0
+5,Matozinhos,314110.0,0.0,0
+6,Itamonte,313300.0,0.0,0
+7,Sarzedo,316553.0,0.0,0
+8,Arcos,310420.0,0.0,0
+9,Ouro Preto,314610.0,0.0,0
+10,Ijaci,313040.0,0.0,0
+11,Pedro Leopoldo,314930.0,0.0,0
+12,Rio Piracicaba,315570.0,0.0,0
+13,Visconde do Rio Branco,317200.0,0.0,0
+14,Itatiaiuçu,313370.0,0.0,0
+15,Mariana,314000.0,0.0,0
+16,Juatuba,313665.0,0.0,0
+17,Timóteo,316870.0,0.0,0
+18,João Monlevade,313620.0,0.0,0
+19,Nova Lima,314480.0,0.0,0
+20,Barão de Cocais,310540.0,0.0,0
+21,Lagoa Santa,313760.0,0.0,0
+22,Belo Oriente,310630.0,0.0,0
+23,Itajubá,313240.0,0.0,0
+24,Nova Serrana,314520.0,0.0,0
+25,Itaúna,313380.0,0.0,0
+26,Extrema,312510.0,0.0,0
+27,Bela Vista de Minas,310600.0,0.0,0
+28,Matias Barbosa,314080.0,0.0,0
+29,Araxá,310400.0,0.0,0
+30,Itabira,313170.0,0.0,0
+31,Ubá,316990.0,0.0,0
+32,Além Paraíba,310150.0,0.0,0
+33,São José da Lapa,316295.0,0.0,0
+34,Dores de Campos,312300.0,0.0,0
+35,Catas Altas,311535.0,0.0,0
+36,Itapeva,313360.0,0.0,0
+37,Santana do Paraíso,315895.0,0.0,0
+38,Cataguases,311530.0,0.0,0
+39,Barroso,310590.0,0.0,0
+40,Santa Rita do Sapucaí,315960.0,0.0,0
+41,Tiradentes,316880.0,0.0,0
+42,São Lourenço,316370.0,0.0,0
+43,Araporã,310375.0,0.0,0
+44,Guaxupé,312870.0,0.0,0
+45,Vespasiano,317120.0,0.0,0
+46,Pirapora,315120.0,0.0,0
+47,Confins,311787.0,0.0,0
+48,Viçosa,317130.0,0.0,0
+49,Rio Acima,315480.0,0.0,0
+50,Caeté,311000.0,0.0,0
+51,Varginha,317070.0,0.0,0
+52,Bicas,310690.0,0.0,0
+53,Caxambu,311550.0,0.0,0
+54,Cambuí,311060.0,0.0,0
+55,Muriaé,314390.0,0.0,0
+56,Santos Dumont,316070.0,0.0,0
+57,Nova Era,314470.0,0.0,0
+58,Pouso Alegre,315250.0,0.0,0
+59,Prudente de Morais,315360.0,0.0,0
+60,Sabará,315670.0,0.0,0
+61,Lagoa da Prata,313720.0,0.0,0
+62,Santa Bárbara,315720.0,0.0,0
+63,Coronel Fabriciano,311940.0,0.0,0
+64,Conselheiro Lafaiete,311830.0,0.0,0
+65,Fronteira,312700.0,0.0,0
+66,Ponte Nova,315210.0,0.0,0
+67,São João Nepomuceno,316290.0,0.0,0
+68,Poços de Caldas,315180.0,0.0,0
+69,São João del Rei,316250.0,0.0,0
+70,Campo Belo,311120.0,0.0,0
+71,Astolfo Dutra,310460.0,0.0,0
+72,Lavras,313820.0,0.0,0
+73,São Gonçalo do Rio Abaixo,316190.0,0.0,0
+74,Santa Cruz de Minas,315733.0,0.0,0
+75,Mateus Leme,314070.0,0.0,0
+76,Raposos,315390.0,0.0,0
+77,Caratinga,311340.0,0.0,0
+78,Paraisópolis,314730.0,0.0,0
+79,Três Corações,316930.0,0.0,0
+80,Ituiutaba,313420.0,0.0,0
+81,Ibirité,312980.0,0.0,0
+82,Cláudio,311660.0,0.0,0
+83,Manhuaçu,313940.0,0.0,0
+84,Alfenas,310160.0,0.0,0
+85,Ribeirão Vermelho,315470.0,0.0,0
+86,Santa Luzia,315780.0,0.0,0
+87,Sete Lagoas,316720.0,0.0,0
+88,Patrocínio do Muriaé,314820.0,0.0,0
+89,Divinópolis,312230.0,0.0,0
+90,Carangola,311330.0,0.0,0
+91,Iturama,313440.0,0.0,0
+92,Delta,312125.0,0.0,0
+93,Conceição do Pará,311760.0,0.0,0
+94,São Geraldo,316150.0,0.0,0
+95,Teófilo Otoni,316860.0,0.0,0
+96,Pains,314650.0,0.0,0
+97,Barbacena,310560.0,0.0,0
+98,Diamantina,312160.0,0.0,0
+99,Alvinópolis,310230.0,0.0,0
+100,Ipatinga,313130.0,0.0,0
+101,Formiga,312610.0,0.0,0
+102,Pará de Minas,314710.0,0.0,0
+103,Santana do Riacho,315900.0,0.0,0
+104,Borda da Mata,310830.0,0.0,0
+105,Passos,314790.0,0.0,0
+106,Guanhães,312800.0,0.0,0
+107,Rio Pomba,315580.0,0.0,0
+108,Ipaba,313115.0,0.0,0
+109,Congonhal,311790.0,0.0,0
+110,Capim Branco,311250.0,0.0,0
+111,Pequeri,314950.0,0.0,0
+112,Camanducaia,311050.0,0.0,0
+113,Três Marias,316935.0,0.0,0
+114,Janaúba,313510.0,0.0,0
+115,Gouveia,312760.0,0.0,0
+116,São Brás do Suaçuí,316090.0,0.0,0
+117,Governador Valadares,312770.0,0.0,0
+118,Paraopeba,314740.0,0.0,0
+119,Leopoldina,313840.0,0.0,0
+120,Miraí,314220.0,0.0,0
+121,Dom Cavati,312250.0,0.0,0
+122,Esmeraldas,312410.0,0.0,0
+123,Moeda,314230.0,0.0,0
+124,Várzea da Palma,317080.0,0.0,0
+125,Mar de Espanha,313980.0,0.0,0
+126,Conceição dos Ouros,311780.0,0.0,0
+127,São Sebastião do Paraíso,316470.0,0.0,0
+128,São Gonçalo do Pará,316180.0,0.0,0
+129,Ouro Fino,314600.0,0.0,0
+130,Carmo do Cajuru,311420.0,0.0,0
+131,Almenara,310170.0,0.0,0
+132,Patos de Minas,314800.0,0.0,0
+133,Itaguara,313220.0,0.0,0
+134,Ribeirão das Neves,315460.0,0.0,0
+135,Jacutinga,313490.0,0.0,0
+136,Salinas,315700.0,0.0,0
+137,Manhumirim,313950.0,0.0,0
+138,Cachoeira da Prata,310960.0,0.0,0
+139,Jeceaba,313540.0,0.0,0
+140,Braúnas,310880.0,0.0,0
+141,São Joaquim de Bicas,316292.0,0.0,0
+142,Ipanema,313120.0,0.0,0
+143,Monte Sião,314340.0,0.0,0
+144,Oliveira,314560.0,0.0,0
+145,Araguari,310350.0,0.0,0
+146,Igarapé,313010.0,0.0,0
+147,Bandeira do Sul,310530.0,0.0,0
+148,São José da Barra,316294.0,0.0,0
+149,Arceburgo,310410.0,0.0,0
+150,Jaboticatubas,313460.0,0.0,0
+151,Pingo-d'Água,315053.0,0.0,0
+152,Santa Maria de Itabira,315800.0,0.0,0
+153,Perdões,314990.0,0.0,0
+154,Uberaba,317010.0,0.0,0
+155,Guarará,312850.0,0.0,0
+156,Padre Carvalho,314625.0,0.0,0
+157,Tapira,316810.0,0.0,0
+158,Guidoval,312880.0,0.0,0
+159,Mato Verde,314100.0,0.0,0
+160,Prados,315270.0,0.0,0
+161,Bom Despacho,310740.0,0.0,0
+162,Divisa Alegre,312235.0,0.0,0
+163,Jaguaraçu,313500.0,0.0,0
+164,Ewbank da Câmara,312500.0,0.0,0
+165,Perdigão,314970.0,0.0,0
+166,Montes Claros,314330.0,0.0,0
+167,Naque,314435.0,0.0,0
+168,Pitangui,315140.0,0.0,0
+169,Mário Campos,314015.0,0.0,0
+170,Dom Silvério,312270.0,0.0,0
+171,Periquito,314995.0,0.0,0
+172,Itaobim,313330.0,0.0,0
+173,Nanuque,314430.0,0.0,0
+174,Conceição do Mato Dentro,311750.0,0.0,0
+175,Rio Novo,315540.0,0.0,0
+176,Betim,310670.0,0.0,0
+177,São João do Oriente,316260.0,0.0,0
+178,Araçuaí,310340.0,0.0,0
+179,Brasília de Minas,310860.0,0.0,0
+180,Três Pontas,316940.0,0.0,0
+181,Leme do Prado,313835.0,0.0,0
+182,Volta Grande,317210.0,0.0,0
+183,Mantena,313960.0,0.0,0
+184,São Sebastião da Bela Vista,316440.0,0.0,0
+185,Itapecerica,313350.0,0.0,0
+186,Engenheiro Caldas,312370.0,0.0,0
+187,Joanésia,313610.0,0.0,0
+188,Capitão Enéas,311270.0,0.0,0
+189,Recreio,315410.0,0.0,0
+190,Itabirinha de Mantena,313180.0,0.0,0
+191,Senador Firmino,316570.0,0.0,0
+192,Santana do Deserto,315860.0,0.0,0
+193,Bocaiúva,310730.0,0.0,0
+194,Guaranésia,312830.0,0.0,0
+195,Grão Mogol,312780.0,0.0,0
+196,Dores de Guanhães,312310.0,0.0,0
+197,Baependi,310490.0,0.0,0
+198,Itamarati de Minas,313260.0,0.0,0
+199,Espinosa,312430.0,0.0,0
+200,São Domingos do Prata,316100.0,0.0,0
+201,Careaçu,311360.0,0.0,0
+202,Novorizonte,314537.0,0.0,0
+203,Jenipapo de Minas,313545.0,0.0,0
+204,Vazante,317100.0,0.0,0
+205,Alpercata,310180.0,0.0,0
+206,Goianá,312738.0,0.0,0
+207,Resplendor,315430.0,0.0,0
+208,Águas Formosas,310090.0,0.0,0
+209,Taquaraçu de Minas,316830.0,0.0,0
+210,Planura,315160.0,0.0,0
+211,Mata Verde,314055.0,0.0,0
+212,Rodeiro,315630.0,0.0,0
+213,Monte Azul,314290.0,0.0,0
+214,São Gotardo,316210.0,0.0,0
+215,Descoberto,312130.0,0.0,0
+216,Lontra,313865.0,0.0,0
+217,Santana do Jacaré,315880.0,0.0,0
+218,Presidente Kubitschek,315330.0,0.0,0
+219,São Gonçalo do Rio Preto,312550.0,0.0,0
+220,Tocantins,316900.0,0.0,0
+221,Lambari,313780.0,0.0,0
+222,Passabém,314750.0,0.0,0
+223,Mesquita,314170.0,0.0,0
+224,Entre Rios de Minas,312390.0,0.0,0
+225,Nazareno,314450.0,0.0,0
+226,São Gonçalo do Sapucaí,316200.0,0.0,0
+227,Machado,313900.0,0.0,0
+228,Pedra Azul,314870.0,0.0,0
+229,Papagaios,314690.0,0.0,0
+230,Andradas,310260.0,0.0,0
+231,Iguatama,313030.0,0.0,0
+232,Rio Casca,315490.0,0.0,0
+233,Ressaquinha,315440.0,0.0,0
+234,Medina,314140.0,0.0,0
+235,Piranguinho,315100.0,0.0,0
+236,Central de Minas,311570.0,0.0,0
+237,Inconfidentes,313060.0,0.0,0
+238,Taiobeiras,316800.0,0.0,0
+239,Maria da Fé,313990.0,0.0,0
+240,São Sebastião do Rio Preto,316480.0,0.0,0
+241,Simão Pereira,316750.0,0.0,0
+242,Santo Antônio do Grama,316010.0,0.0,0
+243,Dores do Indaiá,312320.0,0.0,0
+244,Curvelo,312090.0,0.0,0
+245,Couto de Magalhães de Minas,312010.0,0.0,0
+246,Bom Jesus do Amparo,310770.0,0.0,0
+247,Carmópolis de Minas,311450.0,0.0,0
+248,Senhora de Oliveira,316600.0,0.0,0
+249,Carmésia,311380.0,0.0,0
+250,Paiva,314660.0,0.0,0
+251,Acaiaca,310040.0,0.0,0
+252,Francisco Badaró,312650.0,0.0,0
+253,Espera Feliz,312420.0,0.0,0
+254,São João do Manteninha,316257.0,0.0,0
+255,Barão de Monte Alto,310550.0,0.0,0
+256,Carmo da Mata,311400.0,0.0,0
+257,Piraúba,315130.0,0.0,0
+258,Sapucaí-Mirim,316540.0,0.0,0
+259,São João Evangelista,316280.0,0.0,0
+260,Rio Doce,315500.0,0.0,0
+261,Juiz de Fora,313670.0,0.0,0
+262,Januária,313520.0,0.0,0
+263,Carandaí,311320.0,0.0,0
+264,Córrego do Bom Jesus,311990.0,0.0,0
+265,Iapu,312930.0,0.0,0
+266,Itambacuri,313270.0,0.0,0
+267,Florestal,312600.0,0.0,0
+268,Paracatu,314700.0,0.0,0
+269,Cruzília,312080.0,0.0,0
+270,Entre Folhas,312385.0,0.0,0
+271,Vargem Alegre,317057.0,0.0,0
+272,Itambé do Mato Dentro,313280.0,0.0,0
+273,Serro,316710.0,0.0,0
+274,Cachoeira de Minas,310970.0,0.0,0
+275,Tombos,316920.0,0.0,0
+276,Aimorés,310110.0,0.0,0
+277,Teixeiras,316850.0,0.0,0
+278,Itacarambi,313210.0,0.0,0
+279,Santana dos Montes,315910.0,0.0,0
+280,Monsenhor Paulo,314260.0,0.0,0
+281,Guaraciama,312825.0,0.0,0
+282,Glaucilândia,312735.0,0.0,0
+283,Miradouro,314210.0,0.0,0
+284,Caetanópolis,310990.0,0.0,0
+285,Veredinha,317107.0,0.0,0
+286,Albertina,310140.0,0.0,0
+287,Munhoz,314380.0,0.0,0
+288,Elói Mendes,312360.0,0.0,0
+289,Santa Maria do Salto,315810.0,0.0,0
+290,Marliéria,314030.0,0.0,0
+291,Maripá de Minas,314020.0,0.0,0
+292,Santa Juliana,315770.0,0.0,0
+293,Dom Joaquim,312260.0,0.0,0
+294,São Francisco,316110.0,0.0,0
+295,Mirabela,314200.0,0.0,0
+296,Bom Sucesso,310800.0,0.0,0
+297,Estrela Dalva,312460.0,0.0,0
+298,Poté,315240.0,0.0,0
+299,Areado,310430.0,0.0,0
+300,Morro do Pilar,314370.0,0.0,0
+301,Santa Maria do Suaçuí,315820.0,0.0,0
+302,Santa Efigênia de Minas,315750.0,0.0,0
+303,Nova União,313660.0,0.0,0
+304,Mercês,314160.0,0.0,0
+305,Rochedo de Minas,315620.0,0.0,0
+306,Bocaina de Minas,310720.0,0.0,0
+307,Moema,314240.0,0.0,0
+308,Catas Altas da Noruega,311540.0,0.0,0
+309,Sardoá,316550.0,0.0,0
+310,Lajinha,313770.0,0.0,0
+311,Campanha,311090.0,0.0,0
+312,Coronel Murta,311950.0,0.0,0
+313,Antônio Carlos,310290.0,0.0,0
+314,Goiabeira,312737.0,0.0,0
+315,Jequitinhonha,313580.0,0.0,0
+316,Guarani,312840.0,0.0,0
+317,Cristiano Otoni,312040.0,0.0,0
+318,Engenheiro Navarro,312380.0,0.0,0
+319,Josenópolis,313657.0,0.0,0
+320,Chiador,311620.0,0.0,0
+321,Serra dos Aimorés,316670.0,0.0,0
+322,Porteirinha,315220.0,0.0,0
+323,Divinolândia de Minas,312220.0,0.0,0
+324,Águas Vermelhas,310100.0,0.0,0
+325,Senador Cortes,316560.0,0.0,0
+326,Gonçalves,312740.0,0.0,0
+327,Serranópolis de Minas,316695.0,0.0,0
+328,Matipó,314090.0,0.0,0
+329,Passa Tempo,314770.0,0.0,0
+330,Muzambinho,314410.0,0.0,0
+331,São Sebastião do Rio Verde,316490.0,0.0,0
+332,Cedro do Abaeté,311560.0,0.0,0
+333,Lamim,313790.0,0.0,0
+334,Mathias Lobato,317150.0,0.0,0
+335,Santa Bárbara do Tugúrio,315730.0,0.0,0
+336,Santo Antônio do Rio Abaixo,316050.0,0.0,0
+337,Boa Esperança,310710.0,0.0,0
+338,Contagem,311860.0,0.0,0
+339,Chapada do Norte,311610.0,0.0,0
+340,Luz,313880.0,0.0,0
+341,Capela Nova,311220.0,0.0,0
+342,Japonvar,313535.0,0.0,0
+343,Capitólio,311280.0,0.0,0
+344,Salto da Divisa,315710.0,0.0,0
+345,Antônio Prado de Minas,310310.0,0.0,0
+346,Uberlândia,317020.0,0.0,0
+347,Guaraciaba,312820.0,0.0,0
+348,Frei Inocêncio,312690.0,0.0,0
+349,Cajuri,311020.0,0.0,0
+350,Abaeté,310020.0,0.0,0
+351,Campanário,311080.0,0.0,0
+352,Montalvânia,314270.0,0.0,0
+353,Toledo,316910.0,0.0,0
+354,Cachoeira de Pajeú,310270.0,0.0,0
+355,Presidente Bernardes,315310.0,0.0,0
+356,São José do Alegre,316320.0,0.0,0
+357,Doresópolis,312340.0,0.0,0
+358,Raul Soares,315400.0,0.0,0
+359,Piumhi,315150.0,0.0,0
+360,Resende Costa,315420.0,0.0,0
+361,Arapuá,310380.0,0.0,0
+362,Ubaí,317000.0,0.0,0
+363,Guiricema,312900.0,0.0,0
+364,Itinga,313400.0,0.0,0
+365,Virgem da Lapa,317160.0,0.0,0
+366,Nacip Raydan,314420.0,0.0,0
+367,Aracitaba,310330.0,0.0,0
+368,Jordânia,313650.0,0.0,0
+369,Padre Paraíso,314630.0,0.0,0
+370,Francisco Sá,312670.0,0.0,0
+371,Caranaíba,311310.0,0.0,0
+372,Olímpio Noronha,314550.0,0.0,0
+373,Machacalis,313890.0,0.0,0
+374,São João do Paraíso,316270.0,0.0,0
+375,São José da Safira,316300.0,0.0,0
+376,Fortaleza de Minas,312630.0,0.0,0
+377,Itanhomi,313320.0,0.0,0
+378,Dionísio,312180.0,0.0,0
+379,Varzelândia,317090.0,0.0,0
+380,Cuparaque,312083.0,0.0,0
+381,Mamonas,313925.0,0.0,0
+382,Marilac,314010.0,0.0,0
+383,José Gonçalves de Minas,313652.0,0.0,0
+384,Araçaí,310320.0,0.0,0
+385,Fronteira dos Vales,312705.0,0.0,0
+386,Cipotânea,311630.0,0.0,0
+387,Miravânia,314225.0,0.0,0
+388,Piranga,315080.0,0.0,0
+389,Ponto dos Volantes,315217.0,0.0,0
+390,Senhora do Porto,316610.0,0.0,0
+391,Luislândia,313868.0,0.0,0
+392,Crucilândia,312060.0,0.0,0
+393,Jacinto,313470.0,0.0,0
+394,Ritápolis,315610.0,0.0,0
+395,Paraguaçu,314720.0,0.0,0
+396,Berizal,310665.0,0.0,0
+397,São Thomé das Letras,316520.0,0.0,0
+398,Divino das Laranjeiras,312210.0,0.0,0
+399,Patis,314795.0,0.0,0
+400,Felício dos Santos,312540.0,0.0,0
+401,Cana Verde,311190.0,0.0,0
+402,Rosário da Limeira,315645.0,0.0,0
+403,Cristina,312050.0,0.0,0
+404,Inhapim,313090.0,0.0,0
+405,Urucuia,317052.0,0.0,0
+406,Rio Espera,315520.0,0.0,0
+407,Olaria,314540.0,0.0,0
+408,Inimutaba,313110.0,0.0,0
+409,Santa Helena de Minas,315765.0,0.0,0
+410,Divino,312200.0,0.0,0
+411,Sobrália,316770.0,0.0,0
+412,Frutal,312710.0,0.0,0
+413,Belo Vale,310640.0,0.0,0
+414,Campo do Meio,311130.0,0.0,0
+415,Fruta de Leite,312707.0,0.0,0
+416,Coimbra,311670.0,0.0,0
+417,São José do Goiabal,316340.0,0.0,0
+418,Soledade de Minas,316780.0,0.0,0
+419,Porto Firme,315230.0,0.0,0
+420,Brasópolis,310890.0,0.0,0
+421,Martins Soares,314053.0,0.0,0
+422,Coluna,311680.0,0.0,0
+423,Gonzaga,312750.0,0.0,0
+424,Reduto,315415.0,0.0,0
+425,Igaratinga,313020.0,0.0,0
+426,Joaíma,313600.0,0.0,0
+427,São Pedro do Suaçuí,316410.0,0.0,0
+428,Tarumirim,316840.0,0.0,0
+429,Catuti,311547.0,0.0,0
+430,Novo Oriente de Minas,314535.0,0.0,0
+431,Corinto,311910.0,0.0,0
+432,Ibiracatu,312965.0,0.0,0
+433,Rubim,315660.0,0.0,0
+434,Fernandes Tourinho,312580.0,0.0,0
+435,José Raydan,313655.0,0.0,0
+436,Malacacheta,313920.0,0.0,0
+437,Piranguçu,315090.0,0.0,0
+438,Caraí,311300.0,0.0,0
+439,Carmo de Minas,311410.0,0.0,0
+440,Alpinópolis,310190.0,0.0,0
+441,Virgolândia,317190.0,0.0,0
+442,Santo Antônio do Jacinto,316030.0,0.0,0
+443,Tabuleiro,316790.0,0.0,0
+444,Bueno Brandão,310910.0,0.0,0
+445,Amparo do Serra,310250.0,0.0,0
+446,Antônio Dias,310300.0,0.0,0
+447,Comercinho,311700.0,0.0,0
+448,Pedras de Maria da Cruz,314915.0,0.0,0
+449,Dona Eusébia,312290.0,0.0,0
+450,Piau,315010.0,0.0,0
+451,Mutum,314400.0,0.0,0
+452,São João da Ponte,316240.0,0.0,0
+453,Eugenópolis,312490.0,0.0,0
+454,Congonhas do Norte,311810.0,0.0,0
+455,Patrocínio,314810.0,0.0,0
+456,Divisópolis,312245.0,0.0,0
+457,Palmópolis,314675.0,0.0,0
+458,Santa Cruz de Salinas,315737.0,0.0,0
+459,Santana do Garambéu,315870.0,0.0,0
+460,Sem-Peixe,316556.0,0.0,0
+461,Rio do Prado,315510.0,0.0,0
+462,Pratápolis,315290.0,0.0,0
+463,São Tiago,316500.0,0.0,0
+464,Bias Fortes,310680.0,0.0,0
+465,Rio Manso,315530.0,0.0,0
+466,Galiléia,312730.0,0.0,0
+467,Abre Campo,310030.0,0.0,0
+468,São Félix de Minas,316105.0,0.0,0
+469,Manga,313930.0,0.0,0
+470,Santa Rita de Minas,315935.0,0.0,0
+471,Felisburgo,312560.0,0.0,0
+472,Campo Azul,311115.0,0.0,0
+473,Lima Duarte,313860.0,0.0,0
+474,Conceição de Ipanema,311740.0,0.0,0
+475,Divinésia,312190.0,0.0,0
+476,Oratórios,314585.0,0.0,0
+477,Poço Fundo,315170.0,0.0,0
+478,Maravilhas,313970.0,0.0,0
+479,Pompéu,315200.0,0.0,0
+480,Barra Longa,310570.0,0.0,0
+481,Itumirim,313430.0,0.0,0
+482,Vargem Grande do Rio Pardo,317065.0,0.0,0
+483,Brás Pires,310870.0,0.0,0
+484,Heliodora,312920.0,0.0,0
+485,Mendes Pimentel,314150.0,0.0,0
+486,Coração de Jesus,311880.0,0.0,0
+487,Bonfim,310810.0,0.0,0
+488,São José do Mantimento,316360.0,0.0,0
+489,Paula Cândido,314830.0,0.0,0
+490,Santa Rita de Ibitipoca,315940.0,0.0,0
+491,Ponto Chique,315213.0,0.0,0
+492,Pescador,315000.0,0.0,0
+493,Pouso Alto,315260.0,0.0,0
+494,Alto Caparaó,310205.0,0.0,0
+495,Pedra do Anta,314880.0,0.0,0
+496,Juramento,313680.0,0.0,0
+497,São Geraldo da Piedade,316160.0,0.0,0
+498,Caiana,311010.0,0.0,0
+499,Passa Quatro,314760.0,0.0,0
+500,Candeias,311200.0,0.0,0
+501,Paulistas,314840.0,0.0,0
+502,Ouro Verde de Minas,314620.0,0.0,0
+503,Senhora dos Remédios,316620.0,0.0,0
+504,Chácara,311590.0,0.0,0
+505,Piedade de Ponte Nova,315020.0,0.0,0
+506,Palma,314670.0,0.0,0
+507,Serra Azul de Minas,316650.0,0.0,0
+508,Fortuna de Minas,312640.0,0.0,0
+509,Itaipé,313230.0,0.0,0
+510,Córrego Fundo,311995.0,0.0,0
+511,Laranjal,313800.0,0.0,0
+512,Ipuiúna,313150.0,0.0,0
+513,Buenópolis,310920.0,0.0,0
+514,Capitão Andrade,311265.0,0.0,0
+515,Monte Santo de Minas,314320.0,0.0,0
+516,Coroaci,311920.0,0.0,0
+517,Pintópolis,315057.0,0.0,0
+518,São Francisco do Glória,316140.0,0.0,0
+519,Rio Preto,315590.0,0.0,0
+520,Monte Carmelo,314310.0,0.0,0
+521,São Sebastião do Anta,316447.0,0.0,0
+522,Alterosa,310200.0,0.0,0
+523,Sabinópolis,315680.0,0.0,0
+524,São Sebastião do Oeste,316460.0,0.0,0
+525,Santo Antônio do Itambé,316020.0,0.0,0
+526,Ubaporanga,317005.0,0.0,0
+527,Andrelândia,310280.0,0.0,0
+528,São José do Divino,316330.0,0.0,0
+529,Icaraí de Minas,313005.0,0.0,0
+530,Catuji,311545.0,0.0,0
+531,Argirita,310440.0,0.0,0
+532,Martinho Campos,314050.0,0.0,0
+533,Berilo,310650.0,0.0,0
+534,Serrania,316690.0,0.0,0
+535,Grupiara,312790.0,0.0,0
+536,Simonésia,316760.0,0.0,0
+537,Claro dos Poções,311650.0,0.0,0
+538,Bugre,310925.0,0.0,0
+539,Tumiritinga,316950.0,0.0,0
+540,Alagoa,310130.0,0.0,0
+541,Cônego Marinho,311783.0,0.0,0
+542,Alvorada de Minas,310240.0,0.0,0
+543,Montezuma,314345.0,0.0,0
+544,Centralina,311580.0,0.0,0
+545,Diogo de Vasconcelos,312170.0,0.0,0
+546,Itaverava,313390.0,0.0,0
+547,Conceição do Rio Verde,311770.0,0.0,0
+548,Inhaúma,313100.0,0.0,0
+549,Monte Belo,314300.0,0.0,0
+550,Gameleiras,312733.0,0.0,0
+551,Riacho dos Machados,315450.0,0.0,0
+552,Fama,312520.0,0.0,0
+553,Belmiro Braga,310610.0,0.0,0
+554,Caldas,311030.0,0.0,0
+555,Carmo do Paranaíba,311430.0,0.0,0
+556,São Geraldo do Baixio,316165.0,0.0,0
+557,Ilicínea,313050.0,0.0,0
+558,Abadia dos Dourados,310010.0,0.0,0
+559,Pai Pedro,314655.0,0.0,0
+560,Conselheiro Pena,311840.0,0.0,0
+561,Santa Rita de Jacutinga,315930.0,0.0,0
+562,Dom Viçoso,312280.0,0.0,0
+563,Rubelita,315650.0,0.0,0
+564,Indianópolis,313070.0,0.0,0
+565,Rio Vermelho,315600.0,0.0,0
+566,Pedra do Indaiá,314890.0,0.0,0
+567,Desterro do Melo,312150.0,0.0,0
+568,Minduri,314190.0,0.0,0
+569,Wenceslau Braz,317220.0,0.0,0
+570,Pirajuba,315070.0,0.0,0
+571,São Francisco de Paula,316120.0,0.0,0
+572,São João das Missões,316245.0,0.0,0
+573,Santo Antônio do Aventureiro,316000.0,0.0,0
+574,Santa Rita de Caldas,315920.0,0.0,0
+575,Queluzito,315380.0,0.0,0
+576,Desterro de Entre Rios,312140.0,0.0,0
+577,Jequitaí,313560.0,0.0,0
+578,Carvalhos,311480.0,0.0,0
+579,Ladainha,313700.0,0.0,0
+580,São Sebastião do Maranhão,316450.0,0.0,0
+581,Córrego Danta,311980.0,0.0,0
+582,Brasilândia de Minas,310855.0,0.0,0
+583,Franciscópolis,312675.0,0.0,0
+584,Nova Módica,314490.0,0.0,0
+585,Santa Bárbara do Leste,315725.0,0.0,0
+586,Bertópolis,310660.0,0.0,0
+587,Pavão,314850.0,0.0,0
+588,Senador Amaral,316557.0,0.0,0
+589,Leandro Ferreira,313830.0,0.0,0
+590,Aiuruoca,310120.0,0.0,0
+591,Alvarenga,310220.0,0.0,0
+592,Piedade dos Gerais,315040.0,0.0,0
+593,Botelhos,310840.0,0.0,0
+594,Monte Formoso,314315.0,0.0,0
+595,Bandeira,310520.0,0.0,0
+596,Itapagipe,313340.0,0.0,0
+597,Aguanil,310080.0,0.0,0
+598,São João do Manhuaçu,316255.0,0.0,0
+599,Silveirânia,316730.0,0.0,0
+600,Serra da Saudade,316660.0,0.0,0
+601,Lagoa dos Patos,313730.0,0.0,0
+602,Bonito de Minas,310825.0,0.0,0
+603,Coronel Pacheco,311960.0,0.0,0
+604,Aricanduva,310445.0,0.0,0
+605,Ferros,312590.0,0.0,0
+606,São João do Pacuí,316265.0,0.0,0
+607,Cristália,312030.0,0.0,0
+608,São Sebastião da Vargem Alegre,316443.0,0.0,0
+609,Urucânia,317050.0,0.0,0
+610,Pedra Dourada,314900.0,0.0,0
+611,Nova Porteirinha,314505.0,0.0,0
+612,Capelinha,311230.0,0.0,0
+613,Materlândia,314060.0,0.0,0
+614,Pedro Teixeira,314940.0,0.0,0
+615,Natércia,314440.0,0.0,0
+616,Novo Cruzeiro,314530.0,0.0,0
+617,Bambuí,310510.0,0.0,0
+618,Conceição das Alagoas,311730.0,0.0,0
+619,Juvenília,313695.0,0.0,0
+620,Prata,315280.0,0.0,0
+621,Caparaó,311210.0,0.0,0
+622,São Miguel do Anta,316380.0,0.0,0
+623,Santa Fé de Minas,315760.0,0.0,0
+624,Carmo do Rio Claro,311440.0,0.0,0
+625,Campos Gerais,311160.0,0.0,0
+626,Silvianópolis,316740.0,0.0,0
+627,Virginópolis,317180.0,0.0,0
+628,Baldim,310500.0,0.0,0
+629,Açucena,310050.0,0.0,0
+630,Ninheira,314465.0,0.0,0
+631,Francisco Dumont,312660.0,0.0,0
+632,Campina Verde,311110.0,0.0,0
+633,Liberdade,313850.0,0.0,0
+634,Natalândia,314437.0,0.0,0
+635,Datas,312100.0,0.0,0
+636,Piedade do Rio Grande,315030.0,0.0,0
+637,Santana da Vargem,315830.0,0.0,0
+638,Santo Antônio do Monte,316040.0,0.0,0
+639,Joaquim Felício,313640.0,0.0,0
+640,Sacramento,315690.0,0.0,0
+641,Unaí,317040.0,0.0,0
+642,Pedra Bonita,314875.0,0.0,0
+643,Iraí de Minas,313160.0,0.0,0
+644,Bom Repouso,310790.0,0.0,0
+645,Ibiá,312950.0,0.0,0
+646,São João Batista do Glória,316220.0,0.0,0
+647,Pocrane,315190.0,0.0,0
+648,Arinos,310450.0,0.0,0
+649,Marmelópolis,314040.0,0.0,0
+650,Botumirim,310850.0,0.0,0
+651,Frei Lagonegro,312695.0,0.0,0
+652,Cássia,311510.0,0.0,0
+653,Carlos Chagas,311370.0,0.0,0
+654,Capinópolis,311260.0,0.0,0
+655,Cabeceira Grande,310945.0,0.0,0
+656,Guapé,312810.0,0.0,0
+657,Itutinga,313450.0,0.0,0
+658,Água Boa,310060.0,0.0,0
+659,Bom Jesus do Galho,310780.0,0.0,0
+660,Pimenta,315050.0,0.0,0
+661,São João da Mata,316230.0,0.0,0
+662,Campestre,311100.0,0.0,0
+663,João Pinheiro,313630.0,0.0,0
+664,São Gonçalo do Abaeté,316170.0,0.0,0
+665,Claraval,311640.0,0.0,0
+666,Pedralva,314910.0,0.0,0
+667,Ataléia,310470.0,0.0,0
+668,Lagamar,313710.0,0.0,0
+669,São José do Jacuri,316350.0,0.0,0
+670,Orizânia,314587.0,0.0,0
+671,Nova Ponte,314500.0,0.0,0
+672,Juruaia,313690.0,0.0,0
+673,Coronel Xavier Chaves,311970.0,0.0,0
+674,Funilândia,312720.0,0.0,0
+675,Santa Cruz do Escalvado,315740.0,0.0,0
+676,Delfim Moreira,312110.0,0.0,0
+677,Santo Antônio do Retiro,316045.0,0.0,0
+678,Cantagalo,311205.0,0.0,0
+679,Santo Antônio do Amparo,315990.0,0.0,0
+680,Paineiras,314640.0,0.0,0
+681,Sericita,316630.0,0.0,0
+682,Piedade de Caratinga,315015.0,0.0,0
+683,Ibertioga,312940.0,0.0,0
+684,Augusto de Lima,310480.0,0.0,0
+685,Jaíba,313505.0,0.0,0
+686,Chalé,311600.0,0.0,0
+687,Fervedouro,312595.0,0.0,0
+688,Serranos,316700.0,0.0,0
+689,Setubinha,316555.0,0.0,0
+690,Espírito Santo do Dourado,312440.0,0.0,0
+691,Estiva,312450.0,0.0,0
+692,Alto Rio Doce,310210.0,0.0,0
+693,Camacho,311040.0,0.0,0
+694,Cristais,312020.0,0.0,0
+695,Bom Jardim de Minas,310750.0,0.0,0
+696,Santa Vitória,315980.0,0.0,0
+697,Ibiaí,312960.0,0.0,0
+698,Curral de Dentro,312087.0,0.0,0
+699,Itueta,313410.0,0.0,0
+700,Nepomuceno,314460.0,0.0,0
+701,São Pedro dos Ferros,316400.0,0.0,0
+702,Crisólita,312015.0,0.0,0
+703,Divisa Nova,312240.0,0.0,0
+704,Rio Pardo de Minas,315560.0,0.0,0
+705,Quartel Geral,315370.0,0.0,0
+706,Araponga,310370.0,0.0,0
+707,Conceição da Barra de Minas,311520.0,0.0,0
+708,Minas Novas,314180.0,0.0,0
+709,Cordisburgo,311890.0,0.0,0
+710,Alto Jequitibá,315350.0,0.0,0
+711,Taparuba,316805.0,0.0,0
+712,Vermelho Novo,317115.0,0.0,0
+713,Luminárias,313870.0,0.0,0
+714,Biquinhas,310700.0,0.0,0
+715,Indaiabira,313065.0,0.0,0
+716,Pequi,314960.0,0.0,0
+717,Senador José Bento,316580.0,0.0,0
+718,Itamogi,313290.0,0.0,0
+719,Ibituruna,313000.0,0.0,0
+720,Jacuí,313480.0,0.0,0
+721,Lagoa Dourada,313740.0,0.0,0
+722,Frei Gaspar,312680.0,0.0,0
+723,Cachoeira Dourada,310980.0,0.0,0
+724,Oliveira Fortes,314570.0,0.0,0
+725,Piracema,315060.0,0.0,0
+726,Faria Lemos,312530.0,0.0,0
+727,Tupaciguara,316960.0,0.0,0
+728,Ibitiúra de Minas,312990.0,0.0,0
+729,Cabo Verde,310950.0,0.0,0
+730,Angelândia,310285.0,0.0,0
+731,Imbé de Minas,313055.0,0.0,0
+732,Caputira,311290.0,0.0,0
+733,Turmalina,316970.0,0.0,0
+734,São Domingos das Dores,316095.0,0.0,0
+735,Guimarânia,312890.0,0.0,0
+736,São Bento Abade,316080.0,0.0,0
+737,São Vicente de Minas,316530.0,0.0,0
+738,Carneirinho,311455.0,0.0,0
+739,São Romão,316420.0,0.0,0
+740,Córrego Novo,312000.0,0.0,0
+741,Casa Grande,311490.0,0.0,0
+742,Vieiras,317140.0,0.0,0
+743,Consolação,311850.0,0.0,0
+744,Nova Resende,314510.0,0.0,0
+745,Conceição da Aparecida,311710.0,0.0,0
+746,Monjolos,314250.0,0.0,0
+747,Campo Florido,311140.0,0.0,0
+748,Matutina,314120.0,0.0,0
+749,Japaraíba,313530.0,0.0,0
+750,Peçanha,314860.0,0.0,0
+751,Jesuânia,313590.0,0.0,0
+752,Riachinho,315445.0,0.0,0
+753,Dom Bosco,312247.0,0.0,0
+754,Alfredo Vasconcelos,310163.0,0.0,0
+755,Presidente Juscelino,315320.0,0.0,0
+756,Ingaí,313080.0,0.0,0
+757,Ibiraci,312970.0,0.0,0
+758,Santo Hipólito,316060.0,0.0,0
+759,Lagoa Formosa,313750.0,0.0,0
+760,Durandé,312352.0,0.0,0
+761,Uruana de Minas,317047.0,0.0,0
+762,Santana de Cataguases,315840.0,0.0,0
+763,Tocos do Moji,316905.0,0.0,0
+764,Morro da Garça,314360.0,0.0,0
+765,Carvalhópolis,311470.0,0.0,0
+766,Capetinga,311240.0,0.0,0
+767,Jampruca,313507.0,0.0,0
+768,Cascalho Rico,311500.0,0.0,0
+769,Dores do Turvo,312330.0,0.0,0
+770,Conceição das Pedras,311720.0,0.0,0
+771,Araújos,310390.0,0.0,0
+772,Santana do Manhuaçu,315890.0,0.0,0
+773,São Tomás de Aquino,316510.0,0.0,0
+774,Chapada Gaúcha,311615.0,0.0,0
+775,Canaã,311170.0,0.0,0
+776,Passa Vinte,314780.0,0.0,0
+777,Coqueiral,311870.0,0.0,0
+778,Arantina,310360.0,0.0,0
+779,Santana de Pirapama,315850.0,0.0,0
+780,Carmo da Cachoeira,311390.0,0.0,0
+781,Canápolis,311180.0,0.0,0
+782,Verdelândia,317103.0,0.0,0
+783,Campos Altos,311150.0,0.0,0
+784,São João da Lagoa,316225.0,0.0,0
+785,Buritizeiro,310940.0,0.0,0
+786,Jequeri,313550.0,0.0,0
+787,Vargem Bonita,317060.0,0.0,0
+788,São Pedro da União,316390.0,0.0,0
+789,Olhos-d'Água,314545.0,0.0,0
+790,Ervália,312400.0,0.0,0
+791,Cordislândia,311900.0,0.0,0
+792,Conquista,311820.0,0.0,0
+793,Madre de Deus de Minas,313910.0,0.0,0
+794,Jequitibá,313570.0,0.0,0
+795,Buritis,310930.0,0.0,0
+796,Limeira do Oeste,313862.0,0.0,0
+797,Cruzeiro da Fortaleza,312070.0,0.0,0
+798,Tiros,316890.0,0.0,0
+799,Delfinópolis,312120.0,0.0,0
+800,Carrancas,311460.0,0.0,0
+801,Santa Bárbara do Monte Verde,315727.0,0.0,0
+802,Itanhandu,313310.0,0.0,0
+803,Pedrinópolis,314920.0,0.0,0
+804,Itamarandiba,313250.0,0.0,0
+805,Lagoa Grande,313753.0,0.0,0
+806,Onça de Pitangui,314580.0,0.0,0
+807,São Francisco de Sales,316130.0,0.0,0
+808,Coromandel,311930.0,0.0,0
+809,Nova Belém,314467.0,0.0,0
+810,Bom Jesus da Penha,310760.0,0.0,0
+811,Luisburgo,313867.0,0.0,0
+812,Virgínia,317170.0,0.0,0
+813,Presidente Olegário,315340.0,0.0,0
+814,Umburatiba,317030.0,0.0,0
+815,Turvolândia,316980.0,0.0,0
+816,Felixlândia,312570.0,0.0,0
+817,Cambuquira,311070.0,0.0,0
+818,Santa Rosa da Serra,315970.0,0.0,0
+819,Santa Margarida,315790.0,0.0,0
+820,Morada Nova de Minas,314350.0,0.0,0
+821,Formoso,312620.0,0.0,0
+822,Ipiaçu,313140.0,0.0,0
+823,Estrela do Indaiá,312470.0,0.0,0
+824,Gurinhatã,312910.0,0.0,0
+825,Matias Cardoso,314085.0,0.0,0
+826,São Roque de Minas,316430.0,0.0,0
+827,Pratinha,315300.0,0.0,0
+828,Monte Alegre de Minas,314280.0,0.0,0
+829,Seritinga,316640.0,0.0,0
+830,Veríssimo,317110.0,0.0,0
+831,Varjão de Minas,317075.0,0.0,0
+832,Douradoquara,312350.0,0.0,0
+833,Lassance,313810.0,0.0,0
+834,Tapiraí,316820.0,0.0,0
+835,Santa Rita do Itueto,315950.0,0.0,0
+836,União de Minas,317043.0,0.0,0
+837,Rio Paranaíba,315550.0,0.0,0
+838,Bonfinópolis de Minas,310820.0,0.0,0
+839,Perdizes,314980.0,0.0,0
+840,Carbonita,311350.0,0.0,0
+841,Itacambira,313200.0,0.0,0
+842,Água Comprida,310070.0,0.0,0
+843,Serra do Salitre,316680.0,0.0,0
+844,Comendador Gomes,311690.0,0.0,0
+845,São José da Varginha,316310.0,0.0,0
+846,Guarda-Mor,312860.0,0.0,0
+847,Belo Horizonte,310620.0,0.0,0
+848,Senador Modestino Gonçalves,316590.0,0.0,0
+849,Medeiros,314130.0,0.0,0
+850,Romaria,315640.0,0.0,0
+851,Estrela do Sul,312480.0,0.0,0
+852,Brumadinho,310900,0.0,1

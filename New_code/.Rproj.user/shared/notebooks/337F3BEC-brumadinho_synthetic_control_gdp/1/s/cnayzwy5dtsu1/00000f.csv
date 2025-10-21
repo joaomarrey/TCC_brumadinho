@@ -1,0 +1,3 @@
+"0","test_balance = table(final_df$ANO, final_df$NOME_MUN)"
+"0","test_balance = as.data.frame.matrix(test_balance)"
+"0","write.csv(test_balance, file.path(final_data_path, ""test_balance.csv""))"

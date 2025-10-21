@@ -1,0 +1,2 @@
+"0","# errado pq n esta com variancia corrigida"
+"0","coefplot(mod2_log_id, coefficients = c(""tr2016"", ""tr2017"", ""tr2018"", ""tr2019"", ""tr2020"", ""tr2021""), innerCI = 0, horizontal = TRUE)"

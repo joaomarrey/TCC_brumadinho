@@ -1,0 +1,7 @@
+"0","pdata_cov <- pdata_cov %>%  mutate("
+"0","                           tr2016 = (ano==""2016"")*(treated_group==""1""),"
+"0","                           tr2017 = (ano==""2017"")*(treated_group==""1""),"
+"0","                           tr2018 = (ano==""2018"")*(treated_group==""1""),"
+"0","                           tr2019 = (ano==""2019"")*(treated_group==""1""),"
+"0","                           tr2020 = (ano==""2020"")*(treated_group==""1""),"
+"0","                           tr2021 = (ano==""2021"")*(treated_group==""1""))"

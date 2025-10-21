@@ -1,0 +1,6 @@
+"0","matching_prelim_brumadinho$ano = as_factor(matching_prelim_brumadinho$ano)"
+"0","matching_prelim_brumadinho$treated_group = as_factor(matching_prelim_brumadinho$treated_group)"
+"0","matching_prelim_brumadinho$treated_after_treatment = as_factor(matching_prelim_brumadinho$treated_after_treatment)"
+"0",""
+"0","matching_prelim_brumadinho$log_avg_wage_dec = log(matching_prelim_brumadinho$avg_wage_dec)"
+"0","matching_prelim_brumadinho$log_n_employ_dec = log(matching_prelim_brumadinho$n_employ_dec)"

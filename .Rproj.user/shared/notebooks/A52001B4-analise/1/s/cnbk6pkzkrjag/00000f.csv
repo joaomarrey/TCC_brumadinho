@@ -1,0 +1,7 @@
+"0","#mod2_ro_se <- sqrt(diag(vcovHC(mod2_log_id, type = ""HC1"")))  # robust standard errors"
+"0","#stargazer(mod2_log_id, keep = c(""ano2016:treated_group1"",""ano2017:treated_group1"","
+"0","#                                ""ano2018:treated_group1"", ""ano2019:treated_group1"","
+"0","#                                ""ano2020:treated_group1"", ""ano2021:treated_group1"","
+"0","#                                ""ano2022:treated_group1""),"
+"0","#          type=""text"", se=list(mod2_ro_se), "
+"0","#          digits = 6, notes=""HS Robust standard errors in parenthesis"") "

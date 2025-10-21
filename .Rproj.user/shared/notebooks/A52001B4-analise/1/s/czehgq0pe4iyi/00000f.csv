@@ -1,0 +1,7 @@
+"0","#mod2_log_id <- lm(log_avg_wage_dec~id_municipio+ano+treated_group*ano, data = pdata)"
+"0","#"
+"0","#stargazer(mod2_log_id, keep = c(""ano2016:treated_group1"",""ano2017:treated_group1"","
+"0","#                                ""ano2018:treated_group1"", ""ano2019:treated_group1"","
+"0","#                                ""ano2020:treated_group1"", ""ano2021:treated_group1"","
+"0","#                                ""ano2022:treated_group1""), type=""text"", "
+"0","#          digits = 6) "

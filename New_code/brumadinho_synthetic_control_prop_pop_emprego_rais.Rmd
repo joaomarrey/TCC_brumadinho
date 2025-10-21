@@ -1,0 +1,95 @@
+---
+title: "brumadinho_synthetic_control_prop_pop_emprego_rais"
+output: html_document
+date: "2025-08-16"
+---
+
+```{r}
+library(Synth)
+library(ggplot2)
+library(reshape2)
+library(scales)
+```
+
+
+```{r}
+
+raw_data_path = file.path(dirname(getwd()), "data_new", "raw_data") 
+manipulated_data_path = file.path(dirname(getwd()), "data_new", "manipulated_data")
+final_data_path = file.path(dirname(getwd()), "data_new", "final_data")
+matching_data_path = file.path(dirname(getwd()), "data_new", "matching_data")
+
+```
+
+
+```{r}
+
+final_df = read.csv(file.path(final_data_path, "dados_finais_municipios.csv"))
+
+```
+
+
+```{r}
+test_balance = table(final_df$ANO, final_df$NOME_MUN)
+test_balance = as.data.frame.matrix(test_balance)
+write.csv(test_balance, file.path(final_data_path, "test_balance.csv"))
+```
+
+
+
+###CONTROLE SINTÉTICO COM DOWNSTREAM
+
+```{r}
+#synth_data new matching
+matched_control_group = read.csv(file.path(matching_data_path, 'matching_k_nearest_prop_pop_emprego_rais.csv'))
+
+synth_data = dataprep(
+  foo = final_df,
+  predictors = c(
+                 "PROP_POP_EMPREGADA",
+                 #"VINCULOS_ATIVOS",
+                 #"REMUNERACAO_DEZEMBRO",
+                 "REMUNERACAO_MEDIA",
+                 "PIB_PER_CAPITA", "POP", "PROPORCAO_DA_POP_RURAL", 
+                 "VA_AGRO_PER_CAPITA", "VA_IND_PER_CAPITA", "VA_SERV_PER_CAPITA", 
+                 "VA_ADM_PER_CAPITA", "VA_AGRO_SOBRE_VA_TOT", "VA_IND_SOBRE_VA_TOT", 
+                 "VA_SERV_SOBRE_VA_TOT", "VA_ADM_SOBRE_VA_TOT", "EXP_VIDA_AO_NASCER", 
+                 "MORTALIDADE_INFANTIL", "IDHM_RENDA", "IDHM_LONGEVIDADE", 
+                 "IDHM_EDU", 
+                 #"REND_MEDIO_FORMAL", 
+                 "TRANSF_PER_CAPITA_BOLSA_FAMILIA"
+                 ,
+                 'GINI', 'TAXA_ALFAB', 'PROP_MENOS_DE_1_SM', 'PROP_1_A_2_SM', 
+                 'PROP_2_A_5_SM', 'PROP_5_A_10_SM', 'PROP_MAIS_DE_10_SM'
+                 #,
+                 #'VA_AGRO', 'VA_IND', 'VA_SERV', 'VA_ADM',
+                 #'VA_TOT'
+                 ),
+  dependent = "PROP_POP_EMPREGADA",,
+  unit.variable = "COD_MUN",
+  unit.names.variable = "NOME_MUN",   # add this back
+  time.variable = "ANO",
+  treatment.identifier = 3109006,     # careful: no quotes, must be numeric if COD_MUN is numeric
+  controls.identifier = matched_control_group$COD_MUN,
+  #controls.identifier = c(3145901, 3118007, 3131901, 3133758, 3151107, 3141108, 3133006, 3165537, 3104205, 3146107, 3130408, 3149309, 3155702,                                 3172004, 3133709, 3140001, 3136652, 3168705, 3136207, 3144805, 3105400, 3137601, 3106309, 3132404, 3145208, 3133808,                                 3125101, 3106002, 3140803, 3104007),
+  time.predictors.prior = 2002:2018,
+  time.optimize.ssr = 2002:2018,
+  time.plot = 2002:2021
+)
+```
+
+
+```{r}
+
+synth_output = synth(synth_data)
+
+```
+
+
+```{r}
+path.plot(synth.res = synth_output,
+dataprep.res = synth_data)
+```
+
+
+

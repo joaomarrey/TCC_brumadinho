@@ -1,0 +1,6 @@
+"0",""
+"0","raw_data_path = file.path(dirname(getwd()), ""data_new"", ""raw_data"") "
+"0","manipulated_data_path = file.path(dirname(getwd()), ""data_new"", ""manipulated_data"")"
+"0","final_data_path = file.path(dirname(getwd()), ""data_new"", ""final_data"")"
+"0","matching_data_path = file.path(dirname(getwd()), ""data_new"", ""matching_data"")"
+"0",""

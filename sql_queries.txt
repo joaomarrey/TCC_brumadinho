@@ -1,0 +1,12 @@
+SELECT ano, id_municipio, avg(valor_remuneracao_dezembro), sum(vinculo_ativo_3112)  FROM `basedosdados.br_me_rais.microdados_vinculos` where ano in (2018, 2019, 2020, 2021, 2022) group by ano, id_municipio
+
+SELECT ano, id_municipio, avg(valor_remuneracao_dezembro), sum(vinculo_ativo_3112)  FROM `basedosdados.br_me_rais.microdados_vinculos` where ano in (2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022) group by ano, id_municipio
+
+SELECT ano, id_municipio, avg(valor_remuneracao_dezembro), sum(vinculo_ativo_3112)  FROM `basedosdados.br_me_rais.microdados_vinculos` where ano between 1985 and 2022 group by ano, id_municipio
+
+SELECT * FROM `basedosdados.br_ibge_censo_demografico.microdados_pessoa_2010` where sigla_uf="MG" and id_municipio in ("3107307", "3107406", "3111200","3118007", "3126109", "3127107", "3128709", "3131901", "3135209", "3137205", "3137601", "3138401", "3140001", "3149309", "3151206", "3152105", "3161106", "3169406")
+
+https://console.cloud.google.com/bigquery?p=basedosdados&d=br_me_caged&t=microdados_movimentacao&page=table&pli=1&project=lithe-booster-454021-e2&ws=!1m20!1m4!4m3!1sbasedosdados!2sbr_me_caged!3smicrodados_antigos!1m4!1m3!1slithe-booster-454021-e2!2sbquxjob_3b2328af_199b50dc94d!3sUS!1m4!4m3!1sbasedosdados!2sbr_me_rais!3smicrodados_vinculos!1m4!4m3!1sbasedosdados!2sbr_me_rais!3smicrodados_estabelecimentos
+
+id_municipio_trabalho so começa a partir de 2005
+Estou olhando para salario de pessoas residentes no municipio (id_municipio)

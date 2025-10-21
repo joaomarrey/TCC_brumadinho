@@ -1,0 +1,80 @@
+"0","library(tidyverse)    # for almost all data handling tasks"
+"2","── [1mAttaching core tidyverse packages[22m ───────────────────────────────────────────────── tidyverse 2.0.0 ──
+[32m✔[39m [34mdplyr    [39m 1.1.3     [32m✔[39m [34mreadr    [39m 2.1.4
+[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.0
+[32m✔[39m [34mggplot2  [39m 3.4.4     [32m✔[39m [34mtibble   [39m 3.2.1
+[32m✔[39m [34mlubridate[39m 1.9.2     [32m✔[39m [34mtidyr    [39m 1.3.0
+[32m✔[39m [34mpurrr    [39m 1.0.1     "
+"2","── [1mConflicts[22m ─────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
+[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
+[36mℹ[39m Use the ]8;;http://conflicted.r-lib.org/conflicted package]8;; to force all conflicts to become errors"
+"0","library(ggplot2)      # to produce nice graphics"
+"0","library(stargazer)    # to produce nice results tables"
+"2","
+Please cite as: 
+
+"
+"2"," Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+"
+"2"," R package version 5.2.3. https://CRAN.R-project.org/package=stargazer 
+
+"
+"0","library(haven)        # to import stata file"
+"0","library(ggplot2)      # for graphs"
+"0","library(AER)          # access to HS robust standard errors"
+"2","Loading required package: car
+"
+"2","Loading required package: carData
+"
+"2","
+Attaching package: ‘car’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    recode
+
+"
+"2","The following object is masked from ‘package:purrr’:
+
+    some
+
+"
+"2","Loading required package: lmtest
+"
+"2","Loading required package: zoo
+"
+"2","
+Attaching package: ‘zoo’
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+"
+"2","Loading required package: sandwich
+"
+"2","Loading required package: survival
+"
+"0","library(plm)          # for panel data methods"
+"2","
+Attaching package: ‘plm’
+
+"
+"2","The following objects are masked from ‘package:dplyr’:
+
+    between, lag, lead
+
+"
+"0","library(sandwich)     # for cluster robust se"
+"0","library(lmtest)"
+"0","library(coefplot)     # to create coefficient plots"
+"0","library(""GGally"")"
+"2","Registered S3 method overwritten by 'GGally':
+  method from   
+  +.gg   ggplot2
+"
+"0","library(did)"
+"0",""
