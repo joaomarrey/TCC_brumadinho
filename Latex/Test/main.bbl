@@ -1,0 +1,52 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{matsunaga2020}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=92f8cb4c2efd6ab22a456f5d5815899e}{%
+           family={Matsunaga},
+           familyi={M\bibinitperiod},
+           given={Liz},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{fullhash}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{fullhashraw}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{bibnamehash}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{authorbibnamehash}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{authornamehash}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{authorfullhash}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{authorfullhashraw}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Disasters and mental health: evidence from the Fundao tailing dam breach in Mariana, Brazil}
+      \field{type}{mathesis}
+      \field{year}{2020}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

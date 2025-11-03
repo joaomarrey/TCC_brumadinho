@@ -1,0 +1,12 @@
+taxa_alfabetizacao_mun.xlsx: IBGE
+pop_rural_mun.xls: IBGE
+pop_mun_estimada_2002_2021.csv: IBGE
+PIB_municipios_2010_2021.xlsx: IBGE
+PIB_municipios_2002_2009.xls: IBGE
+gini_mun.csv: IBGE
+faixas_salario_min_mun.xlsx: IBGE
+Dados Gerais.xlsx: Atlas do Brasil
+
+Dicas: 
+ver histórico de download
+no sidra, filtrar por município no menu "território"

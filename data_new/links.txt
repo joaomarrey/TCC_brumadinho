@@ -1,3 +1,14 @@
 https://sidra.ibge.gov.br/home/pnadct/brasil
 https://www.ipeadata.gov.br/Default.aspx
 https://sidra.ibge.gov.br/tabela/3279
+http://www.atlasbrasil.org.br/consulta/planilha
+
+Rais e caged basedosdados
+https://basedosdados.org/dataset/3e7c4d58-96ba-448e-b053-d385a829ef00?table=dabe5ea8-3bb5-4a3e-9d5a-3c7003cd4a60
+https://basedosdados.org/dataset/562b56a3-0b01-4735-a049-eeac5681f056?table=95106d6f-e36e-4fed-b8e9-99c41cd99ecf
+
+Rais e caged gov
+https://www.gov.br/pt-br/servicos/solicitar-consulta-as-estatisticas-da-rais-e-do-caged
+https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho
+https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/microdados-rais-e-caged ## importante (da para usar windows explorer)
+http://cemin.wikidot.com/raisr

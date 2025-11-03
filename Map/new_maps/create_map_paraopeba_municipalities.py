@@ -79,11 +79,138 @@ legend_elements = [
 ]
 
 
-ax.set_title("Municipalities Affected and Paraopeba River (Minas Gerais State)")
+# ax.set_title("Municipalities Affected and Paraopeba River (Minas Gerais State)")
 plt.axis('off')
 ax.legend(handles=legend_elements, loc='lower left',
           # title='River and Downstream Municipalities'
           )
 # plt.show()
 plt.tight_layout()
-plt.savefig('municipios_afetados_e_rio_map.png', dpi=500, bbox_inches='tight')
+plt.savefig('Mapa_Rio/municipios_afetados_e_rio_map.png', dpi=500, bbox_inches='tight')
+
+
+
+##############
+# # --- Build a second, zoomed-in map around the dam ---
+# zoom_factor = 0.5  # adjust how tight the zoom is (smaller = tighter zoom)
+#
+# # Get dam coordinates
+# dam_x, dam_y = dam_location.x, dam_location.y
+#
+# # Compute zoom box limits
+# x_min, x_max = dam_x - zoom_factor, dam_x + zoom_factor
+# y_min, y_max = dam_y - zoom_factor, dam_y + zoom_factor
+#
+# # Create new figure
+# fig2, ax2 = plt.subplots(1, 1, figsize=(6, 6))
+#
+# # Plot the same base map layers
+# merged.plot(
+#     color=merged['color'],
+#     edgecolor='dimgray',
+#     linewidth=0.25,
+#     ax=ax2
+# )
+#
+# # Hatched downstream municipalities
+# merged[merged['DOWNSTREAM'] == 1].plot(
+#     facecolor="none",
+#     edgecolor="black",
+#     hatch="////",
+#     linewidth=0.5,
+#     ax=ax2
+# )
+#
+# # Add river
+# rio_paraopeba.plot(ax=ax2, color='blue', linewidth=1.2)
+#
+# # Add dam marker
+# dam_gdf.plot(
+#     ax=ax2,
+#     color='gold',
+#     marker='*',
+#     markersize=250,
+#     edgecolor='black',
+#     linewidth=0.8,
+#     zorder=5
+# )
+#
+# # Set zoomed-in limits
+# ax2.set_xlim(x_min, x_max)
+# ax2.set_ylim(y_min, y_max)
+#
+# # Aesthetics
+# plt.axis('off')
+# ax2.set_title("Zoom on Córrego do Feijão Dam and Surrounding Area", fontsize=10)
+# plt.tight_layout()
+#
+# # Save
+# plt.savefig('Mapa_Rio/dam_zoom_map.png', dpi=500, bbox_inches='tight')
+
+
+
+#############
+# --- Build a second map focused on the river ---
+
+# Get river bounding box (minx, miny, maxx, maxy)
+river_bounds = rio_paraopeba.total_bounds
+
+# Add a small margin (so it's not cut too tight)
+margin = 0.1  # adjust as needed (in degrees)
+x_min = river_bounds[0] - margin
+y_min = river_bounds[1] - margin
+x_max = river_bounds[2] + margin
+y_max = river_bounds[3] + margin
+
+# Create a new figure for the zoomed map
+fig2, ax2 = plt.subplots(1, 1, figsize=(8, 6))
+
+# Base map
+merged.plot(
+    color=merged['color'],
+    edgecolor='dimgray',
+    linewidth=0.25,
+    ax=ax2
+)
+
+# Hatched downstream municipalities
+merged[merged['DOWNSTREAM'] == 1].plot(
+    facecolor="none",
+    edgecolor="black",
+    hatch="////",
+    linewidth=0.5,
+    ax=ax2
+)
+
+# Add river and dam
+rio_paraopeba.plot(ax=ax2, color='blue', linewidth=1.2, label='Paraopeba River')
+dam_gdf.plot(ax=ax2, color='gold', marker='*', markersize=250,
+             edgecolor='black', linewidth=0.8, zorder=5)
+
+# Apply zoom to show entire river
+ax2.set_xlim(x_min, x_max)
+ax2.set_ylim(y_min, y_max)
+
+
+# Legend
+legend_elements = [
+    mpatches.Patch(facecolor='white', edgecolor='black', hatch='///', label='Downstream Municipalities'),
+    mpatches.Patch(color='blue', label='Paraopeba River'),
+    plt.Line2D([0], [0], marker='*',
+                color='black',             # border color
+                markerfacecolor='gold',    # fill color
+                markeredgewidth=0.8,       # border thickness
+                label='Córrego do Feijão Dam',
+                markersize=15,
+                linestyle='None')
+]
+
+# Aesthetics
+plt.axis('off')
+# ax2.set_title("Paraopeba River and Downstream Municipalities", fontsize=10)
+ax2.legend(handles=legend_elements, loc='lower left')
+plt.tight_layout()
+
+# Save
+plt.savefig('Mapa_Rio/zoom_river_map.png', dpi=500, bbox_inches='tight')
+# plt.show()

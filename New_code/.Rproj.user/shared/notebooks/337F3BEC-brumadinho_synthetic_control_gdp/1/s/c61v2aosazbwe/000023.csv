@@ -54,9 +54,9 @@
 "0","      Y1 = unname(Y1),"
 "0","      Y0s = unname(Y0s),"
 "0","      Gap = unname(gap),"
-"0","      pre_rmspe = pre_rmspe,"
-"0","      post_rmspe = post_rmspe,"
-"0","      ratio = ratio"
+"0","      #pre_rmspe = pre_rmspe,"
+"0","      #post_rmspe = post_rmspe,"
+"0","      #ratio = ratio"
 "0","    )"
 "0","    #print(""WORKED"")"
 "0","    #placebo_results[[as.character(treated_cod)]] <- data.frame( Year = years, Gap = gap, COD_MUN = treated_cod, NOME_MUN = treated_name )"
@@ -860,6 +860,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Pirapora"
@@ -1642,6 +1645,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -2426,6 +2432,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Pedro Leopoldo"
@@ -3208,6 +3217,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -3992,6 +4004,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Itatiaiuçu"
@@ -4774,6 +4789,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -5558,6 +5576,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Mateus Leme"
@@ -6340,6 +6361,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -7124,6 +7148,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Santos Dumont"
@@ -7906,6 +7933,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -8690,6 +8720,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Visconde do Rio Branco"
@@ -9472,6 +9505,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -10256,6 +10292,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Mariana"
@@ -11038,6 +11077,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -11822,6 +11864,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Rio Piracicaba"
@@ -12604,6 +12649,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -13388,6 +13436,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Guaranésia"
@@ -14170,6 +14221,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -14954,6 +15008,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Itamonte"
@@ -15736,6 +15793,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -16520,6 +16580,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Carmo do Cajuru"
@@ -17302,6 +17365,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -18086,6 +18152,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Congonhas"
@@ -18868,6 +18937,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -19652,6 +19724,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Nova Era"
@@ -20434,6 +20509,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -21218,6 +21296,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Paraisópolis"
@@ -22000,6 +22081,9 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "
 "1","Running placebo for:"
 "1"," "
@@ -22784,6 +22868,9 @@ solution.w:
 "1","
 
 "
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
+"
 "1","Running placebo for:"
 "1"," "
 "1","Pedra Azul"
@@ -23566,4 +23653,7 @@ solution.w:
 "1"," "
 "1","
 
+"
+"2","Error in data.frame(Year = years, COD_MUN = treated_cod, NOME_MUN = treated_name,  : 
+  argument is missing, with no default
 "

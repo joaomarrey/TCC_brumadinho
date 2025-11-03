@@ -1,0 +1,785 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global/global}
+    \entry{abadie2021}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0a07bea0968f0908804d7c81f9d59a3f}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0a07bea0968f0908804d7c81f9d59a3f}
+      \strng{fullhash}{0a07bea0968f0908804d7c81f9d59a3f}
+      \strng{fullhashraw}{0a07bea0968f0908804d7c81f9d59a3f}
+      \strng{bibnamehash}{0a07bea0968f0908804d7c81f9d59a3f}
+      \strng{authorbibnamehash}{0a07bea0968f0908804d7c81f9d59a3f}
+      \strng{authornamehash}{0a07bea0968f0908804d7c81f9d59a3f}
+      \strng{authorfullhash}{0a07bea0968f0908804d7c81f9d59a3f}
+      \strng{authorfullhashraw}{0a07bea0968f0908804d7c81f9d59a3f}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of economic literature}
+      \field{number}{2}
+      \field{title}{Using synthetic controls: Feasibility, data requirements, and methodological aspects}
+      \field{volume}{59}
+      \field{year}{2021}
+      \field{pages}{391\bibrangedash 425}
+      \range{pages}{35}
+    \endentry
+    \entry{abadie2010}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=0a07bea0968f0908804d7c81f9d59a3f}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0832ef6d7487a2fd5efd2bba072226a}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9b2df783cf62266fa5de8a437dfc3b0}{%
+           family={Hainmueller},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{fullhash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{fullhashraw}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{bibnamehash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{authorbibnamehash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{authornamehash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{authorfullhash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{authorfullhashraw}{925dc6aa74760761894a391c6f7d9d66}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of the American statistical Association}
+      \field{number}{490}
+      \field{title}{Synthetic control methods for comparative case studies: Estimating the effect of California’s tobacco control program}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{pages}{493\bibrangedash 505}
+      \range{pages}{13}
+    \endentry
+    \entry{abadie2011}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=0a07bea0968f0908804d7c81f9d59a3f}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0832ef6d7487a2fd5efd2bba072226a}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9b2df783cf62266fa5de8a437dfc3b0}{%
+           family={Hainmueller},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{fullhash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{fullhashraw}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{bibnamehash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{authorbibnamehash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{authornamehash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{authorfullhash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{authorfullhashraw}{925dc6aa74760761894a391c6f7d9d66}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{title}{Synth: An R package for synthetic control methods in comparative case studies}
+      \field{volume}{42}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+    \endentry
+    \entry{abadie2015}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=0a07bea0968f0908804d7c81f9d59a3f}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0832ef6d7487a2fd5efd2bba072226a}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9b2df783cf62266fa5de8a437dfc3b0}{%
+           family={Hainmueller},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{fullhash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{fullhashraw}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{bibnamehash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{authorbibnamehash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{authornamehash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{authorfullhash}{925dc6aa74760761894a391c6f7d9d66}
+      \strng{authorfullhashraw}{925dc6aa74760761894a391c6f7d9d66}
+      \field{extraname}{3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{number}{2}
+      \field{title}{Comparative politics and the synthetic control method}
+      \field{volume}{59}
+      \field{year}{2015}
+      \field{pages}{495\bibrangedash 510}
+      \range{pages}{16}
+    \endentry
+    \entry{abadie2003}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0a07bea0968f0908804d7c81f9d59a3f}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=578728537db41db1713362fef1fb3108}{%
+           family={Gardeazabal},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{810eb9dd6e874a87d8c92fab7829aeeb}
+      \strng{fullhash}{810eb9dd6e874a87d8c92fab7829aeeb}
+      \strng{fullhashraw}{810eb9dd6e874a87d8c92fab7829aeeb}
+      \strng{bibnamehash}{810eb9dd6e874a87d8c92fab7829aeeb}
+      \strng{authorbibnamehash}{810eb9dd6e874a87d8c92fab7829aeeb}
+      \strng{authornamehash}{810eb9dd6e874a87d8c92fab7829aeeb}
+      \strng{authorfullhash}{810eb9dd6e874a87d8c92fab7829aeeb}
+      \strng{authorfullhashraw}{810eb9dd6e874a87d8c92fab7829aeeb}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{American economic review}
+      \field{number}{1}
+      \field{title}{The economic costs of conflict: A case study of the Basque Country}
+      \field{volume}{93}
+      \field{year}{2003}
+      \field{pages}{113\bibrangedash 132}
+      \range{pages}{20}
+    \endentry
+    \entry{silva2020}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=338cf2413b386e17c9661a20fc501a3b}{%
+           family={Andrade\bibnamedelimb da\bibnamedelima Silva},
+           familyi={A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23bd9054d4be2fabf0996843ace4b738}{%
+           family={Machado\bibnamedelimb de\bibnamedelima Freitas},
+           familyi={M\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6859f7472511e6ca5d06fbe7e594b8ee}{%
+           family={Xavier},
+           familyi={X\bibinitperiod},
+           given={D.\bibnamedelimi R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48a6a11480aed7e580664847efed5d23}{%
+           family={Rocha\bibnamedelima Romão},
+           familyi={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7a3743a28f322626a6b6088782ce252f}
+      \strng{fullhash}{c93b116d8f0ea8228480f8b26ae08d52}
+      \strng{fullhashraw}{c93b116d8f0ea8228480f8b26ae08d52}
+      \strng{bibnamehash}{c93b116d8f0ea8228480f8b26ae08d52}
+      \strng{authorbibnamehash}{c93b116d8f0ea8228480f8b26ae08d52}
+      \strng{authornamehash}{7a3743a28f322626a6b6088782ce252f}
+      \strng{authorfullhash}{c93b116d8f0ea8228480f8b26ae08d52}
+      \strng{authorfullhashraw}{c93b116d8f0ea8228480f8b26ae08d52}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Ciência e Cultura}
+      \field{number}{2}
+      \field{title}{Sobreposição de riscos e impactos no desastre da Vale em Brumadinho}
+      \field{volume}{72}
+      \field{year}{2020}
+      \field{pages}{21\bibrangedash 28}
+      \range{pages}{8}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.engfailanal.2021.105934
+      \endverb
+    \endentry
+    \entry{atlasBR}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a8b2ef152d20958d76e80296965d7050}{%
+           family={{Atlas do Desenvolvimento Humano no Brasil}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8b2ef152d20958d76e80296965d7050}
+      \strng{fullhash}{a8b2ef152d20958d76e80296965d7050}
+      \strng{fullhashraw}{a8b2ef152d20958d76e80296965d7050}
+      \strng{bibnamehash}{a8b2ef152d20958d76e80296965d7050}
+      \strng{authorbibnamehash}{a8b2ef152d20958d76e80296965d7050}
+      \strng{authornamehash}{a8b2ef152d20958d76e80296965d7050}
+      \strng{authorfullhash}{a8b2ef152d20958d76e80296965d7050}
+      \strng{authorfullhashraw}{a8b2ef152d20958d76e80296965d7050}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.atlasbrasil.org.br/consulta/planilha}}
+      \field{note}{Accessed: 2025-08-17}
+      \field{title}{Municipal Data}
+      \field{year}{2025}
+    \endentry
+    \entry{basedados2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=18022535bd9992e33b6f6ed43979b355}{%
+           family={{Base dos Dados}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{18022535bd9992e33b6f6ed43979b355}
+      \strng{fullhash}{18022535bd9992e33b6f6ed43979b355}
+      \strng{fullhashraw}{18022535bd9992e33b6f6ed43979b355}
+      \strng{bibnamehash}{18022535bd9992e33b6f6ed43979b355}
+      \strng{authorbibnamehash}{18022535bd9992e33b6f6ed43979b355}
+      \strng{authornamehash}{18022535bd9992e33b6f6ed43979b355}
+      \strng{authorfullhash}{18022535bd9992e33b6f6ed43979b355}
+      \strng{authorfullhashraw}{18022535bd9992e33b6f6ed43979b355}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Online database}
+      \field{note}{Compiled data from RAIS and CAGED}
+      \field{title}{Data Portal}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://basedosdados.org
+      \endverb
+      \verb{url}
+      \verb https://basedosdados.org
+      \endverb
+    \endentry
+    \entry{belasen2008}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=38f9063e6a0bdd4cffd3b35e23cda6c9}{%
+           family={Belasen},
+           familyi={B\bibinitperiod},
+           given={Ariel\bibnamedelima R},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2455dc5f0b437fe42041a76c113c054c}{%
+           family={Polachek},
+           familyi={P\bibinitperiod},
+           given={Solomon\bibnamedelima W},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{262947ad5561e59584861fd98f7c9db2}
+      \strng{fullhash}{262947ad5561e59584861fd98f7c9db2}
+      \strng{fullhashraw}{262947ad5561e59584861fd98f7c9db2}
+      \strng{bibnamehash}{262947ad5561e59584861fd98f7c9db2}
+      \strng{authorbibnamehash}{262947ad5561e59584861fd98f7c9db2}
+      \strng{authornamehash}{262947ad5561e59584861fd98f7c9db2}
+      \strng{authorfullhash}{262947ad5561e59584861fd98f7c9db2}
+      \strng{authorfullhashraw}{262947ad5561e59584861fd98f7c9db2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{American Economic Review}
+      \field{number}{2}
+      \field{title}{How hurricanes affect wages and employment in local labor markets}
+      \field{volume}{98}
+      \field{year}{2008}
+      \field{pages}{49\bibrangedash 53}
+      \range{pages}{5}
+    \endentry
+    \entry{coffman2012}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=15bfe11297d733ca6c7e2e470542f0f2}{%
+           family={Coffman},
+           familyi={C\bibinitperiod},
+           given={Makena},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6c8695dfeff7080762b4078521fbc11}{%
+           family={Noy},
+           familyi={N\bibinitperiod},
+           given={Ilan},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{67378d7af1a1d72d42917b53212fd6aa}
+      \strng{fullhash}{67378d7af1a1d72d42917b53212fd6aa}
+      \strng{fullhashraw}{67378d7af1a1d72d42917b53212fd6aa}
+      \strng{bibnamehash}{67378d7af1a1d72d42917b53212fd6aa}
+      \strng{authorbibnamehash}{67378d7af1a1d72d42917b53212fd6aa}
+      \strng{authornamehash}{67378d7af1a1d72d42917b53212fd6aa}
+      \strng{authorfullhash}{67378d7af1a1d72d42917b53212fd6aa}
+      \strng{authorfullhashraw}{67378d7af1a1d72d42917b53212fd6aa}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Environment and Development Economics}
+      \field{number}{2}
+      \field{title}{Hurricane Iniki: measuring the long-term economic impact of a natural disaster using synthetic control}
+      \field{volume}{17}
+      \field{year}{2012}
+      \field{pages}{187\bibrangedash 205}
+      \range{pages}{19}
+    \endentry
+    \entry{ibge2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3898f1ceb6fdd56f963db7f9326130e4}{%
+           family={{IBGE}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{fullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{fullhashraw}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{bibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorbibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authornamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorfullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorfullhashraw}{3898f1ceb6fdd56f963db7f9326130e4}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://sidra.ibge.gov.br/home/}}
+      \field{note}{Accessed: 2025-08-16}
+      \field{title}{Municipal Data}
+      \field{year}{2025}
+    \endentry
+    \entry{jasiTCE}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5cf1865c8fd7f7085eeb18624e5fc1be}{%
+           family={Jasi},
+           familyi={J\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5cf1865c8fd7f7085eeb18624e5fc1be}
+      \strng{fullhash}{5cf1865c8fd7f7085eeb18624e5fc1be}
+      \strng{fullhashraw}{5cf1865c8fd7f7085eeb18624e5fc1be}
+      \strng{bibnamehash}{5cf1865c8fd7f7085eeb18624e5fc1be}
+      \strng{authorbibnamehash}{5cf1865c8fd7f7085eeb18624e5fc1be}
+      \strng{authornamehash}{5cf1865c8fd7f7085eeb18624e5fc1be}
+      \strng{authorfullhash}{5cf1865c8fd7f7085eeb18624e5fc1be}
+      \strng{authorfullhashraw}{5cf1865c8fd7f7085eeb18624e5fc1be}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Chemical Engineer}
+      \field{title}{Brazil dam collapse prosecutors investigate collusion}
+      \field{urlday}{24}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.thechemicalengineer.com/news/brazil-dam-collapse-prosecutors-investigate-collusion/
+      \endverb
+      \verb{url}
+      \verb https://www.thechemicalengineer.com/news/brazil-dam-collapse-prosecutors-investigate-collusion/
+      \endverb
+    \endentry
+    \entry{freitas2019}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=23bd9054d4be2fabf0996843ace4b738}{%
+           family={Machado\bibnamedelimb de\bibnamedelima Freitas},
+           familyi={M\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aef30c2f82a64b429a931fa2e38dc0f2}{%
+           family={Barcellos},
+           familyi={B\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c4785f09f2baf5e299ef1d357885bf2}{%
+           family={Rodrigues\bibnamedelimb Fróes\bibnamedelima Asmus},
+           familyi={R\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={C.\bibnamedelimi I.},
+           giveni={C\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=338cf2413b386e17c9661a20fc501a3b}{%
+           family={Andrade\bibnamedelimb da\bibnamedelima Silva},
+           familyi={A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6859f7472511e6ca5d06fbe7e594b8ee}{%
+           family={Xavier},
+           familyi={X\bibinitperiod},
+           given={D.\bibnamedelimi R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a89363c82489afbf4186ee8eb9cce839}
+      \strng{fullhash}{138fa89da362bdac0cd3f9e2ae2e1f72}
+      \strng{fullhashraw}{138fa89da362bdac0cd3f9e2ae2e1f72}
+      \strng{bibnamehash}{138fa89da362bdac0cd3f9e2ae2e1f72}
+      \strng{authorbibnamehash}{138fa89da362bdac0cd3f9e2ae2e1f72}
+      \strng{authornamehash}{a89363c82489afbf4186ee8eb9cce839}
+      \strng{authorfullhash}{138fa89da362bdac0cd3f9e2ae2e1f72}
+      \strng{authorfullhashraw}{138fa89da362bdac0cd3f9e2ae2e1f72}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Cadernos de saúde pública}
+      \field{number}{5}
+      \field{title}{Da Samarco em Mariana à Vale em Brumadinho: desastres em barragens de mineração e Saúde Coletiva}
+      \field{volume}{35}
+      \field{year}{2019}
+      \field{pages}{21\bibrangedash 28}
+      \range{pages}{8}
+    \endentry
+    \entry{matsunaga2020}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=92f8cb4c2efd6ab22a456f5d5815899e}{%
+           family={Matsunaga},
+           familyi={M\bibinitperiod},
+           given={Liz},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Faculdade de Economia, Administração, Contabilidade e Atuária da Universidade de São Paulo}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \strng{namehash}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{fullhash}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{fullhashraw}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{bibnamehash}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{authorbibnamehash}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{authornamehash}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{authorfullhash}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \strng{authorfullhashraw}{92f8cb4c2efd6ab22a456f5d5815899e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Disasters and mental health: evidence from the Fundao tailing dam breach in Mariana, Brazil}
+      \field{type}{mathesis}
+      \field{year}{2020}
+    \endentry
+    \entry{mincer1974}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=acc439dff0bb381ea083555637e18efa}{%
+           family={Mincer},
+           familyi={M\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Columbia University Press}%
+      }
+      \strng{namehash}{acc439dff0bb381ea083555637e18efa}
+      \strng{fullhash}{acc439dff0bb381ea083555637e18efa}
+      \strng{fullhashraw}{acc439dff0bb381ea083555637e18efa}
+      \strng{bibnamehash}{acc439dff0bb381ea083555637e18efa}
+      \strng{authorbibnamehash}{acc439dff0bb381ea083555637e18efa}
+      \strng{authornamehash}{acc439dff0bb381ea083555637e18efa}
+      \strng{authorfullhash}{acc439dff0bb381ea083555637e18efa}
+      \strng{authorfullhashraw}{acc439dff0bb381ea083555637e18efa}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Schooling, Experience, and Earnings}
+      \field{year}{1974}
+    \endentry
+    \entry{pereira2019}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=825805d85866d30adcecb1e9dd16f798}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi F.},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8605f6fe85e4da275af848b89879dc78}{%
+           family={Cruz},
+           familyi={C\bibinitperiod},
+           given={G.\bibnamedelimi B.},
+           giveni={G\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6401c6fcbed7da4154ed12da4ce4b45d}{%
+           family={Guimarães},
+           familyi={G\bibinitperiod},
+           given={R.\bibnamedelimi M.\bibnamedelimi F.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a06fdc27c21f64a86b64e381d3d91b5f}
+      \strng{fullhash}{a06fdc27c21f64a86b64e381d3d91b5f}
+      \strng{fullhashraw}{a06fdc27c21f64a86b64e381d3d91b5f}
+      \strng{bibnamehash}{a06fdc27c21f64a86b64e381d3d91b5f}
+      \strng{authorbibnamehash}{a06fdc27c21f64a86b64e381d3d91b5f}
+      \strng{authornamehash}{a06fdc27c21f64a86b64e381d3d91b5f}
+      \strng{authorfullhash}{a06fdc27c21f64a86b64e381d3d91b5f}
+      \strng{authorfullhashraw}{a06fdc27c21f64a86b64e381d3d91b5f}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Environmental Analysis and Progress}
+      \field{number}{2}
+      \field{title}{Impactos do rompimento da barragem de rejeitos de Brumadinho, Brasil: uma análise baseada nas mudanças de cobertura da terra}
+      \field{volume}{4}
+      \field{year}{2019}
+      \field{pages}{122\bibrangedash 129}
+      \range{pages}{8}
+    \endentry
+    \entry{polignano2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=438d3d463a8a37e09f1cf85908350192}{%
+           family={Polignano},
+           familyi={P\bibinitperiod},
+           given={M.\bibnamedelimi V.},
+           giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=416ad3aefad9ba3a557263b0f571108b}{%
+           family={Lemos},
+           familyi={L\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cafa2183d7d4d6fd94d6b4a2d6a54f3a}
+      \strng{fullhash}{cafa2183d7d4d6fd94d6b4a2d6a54f3a}
+      \strng{fullhashraw}{cafa2183d7d4d6fd94d6b4a2d6a54f3a}
+      \strng{bibnamehash}{cafa2183d7d4d6fd94d6b4a2d6a54f3a}
+      \strng{authorbibnamehash}{cafa2183d7d4d6fd94d6b4a2d6a54f3a}
+      \strng{authornamehash}{cafa2183d7d4d6fd94d6b4a2d6a54f3a}
+      \strng{authorfullhash}{cafa2183d7d4d6fd94d6b4a2d6a54f3a}
+      \strng{authorfullhashraw}{cafa2183d7d4d6fd94d6b4a2d6a54f3a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Ciência e Cultura}
+      \field{number}{2}
+      \field{title}{Rompimento da barragem da Vale em Brumadinho: impactos socioambientais na Bacia do Rio Paraopeba}
+      \field{volume}{72}
+      \field{year}{2020}
+      \field{pages}{37\bibrangedash 43}
+      \range{pages}{7}
+    \endentry
+    \entry{rodriguesAB}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ba1a76b74b4842a0fa071c128dd49b1e}{%
+           family={Rodrigues},
+           familyi={R\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ba1a76b74b4842a0fa071c128dd49b1e}
+      \strng{fullhash}{ba1a76b74b4842a0fa071c128dd49b1e}
+      \strng{fullhashraw}{ba1a76b74b4842a0fa071c128dd49b1e}
+      \strng{bibnamehash}{ba1a76b74b4842a0fa071c128dd49b1e}
+      \strng{authorbibnamehash}{ba1a76b74b4842a0fa071c128dd49b1e}
+      \strng{authornamehash}{ba1a76b74b4842a0fa071c128dd49b1e}
+      \strng{authorfullhash}{ba1a76b74b4842a0fa071c128dd49b1e}
+      \strng{authorfullhashraw}{ba1a76b74b4842a0fa071c128dd49b1e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Agência Brasil}
+      \field{title}{Brumadinho dam collapse: 23 thousand compensation deals inked}
+      \field{urlday}{24}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://agenciabrasil.ebc.com.br/en/geral/noticia/2024-01/brumadinho-dam-collapse-over-23-thousand-compensation-deals-forged
+      \endverb
+      \verb{url}
+      \verb https://agenciabrasil.ebc.com.br/en/geral/noticia/2024-01/brumadinho-dam-collapse-over-23-thousand-compensation-deals-forged
+      \endverb
+    \endentry
+    \entry{senraBBC}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=df446c32f145fd0aeb292cc29c48d6d1}{%
+           family={Senra},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df446c32f145fd0aeb292cc29c48d6d1}
+      \strng{fullhash}{df446c32f145fd0aeb292cc29c48d6d1}
+      \strng{fullhashraw}{df446c32f145fd0aeb292cc29c48d6d1}
+      \strng{bibnamehash}{df446c32f145fd0aeb292cc29c48d6d1}
+      \strng{authorbibnamehash}{df446c32f145fd0aeb292cc29c48d6d1}
+      \strng{authornamehash}{df446c32f145fd0aeb292cc29c48d6d1}
+      \strng{authorfullhash}{df446c32f145fd0aeb292cc29c48d6d1}
+      \strng{authorfullhashraw}{df446c32f145fd0aeb292cc29c48d6d1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BBC News Brasil}
+      \field{title}{Brumadinho, a história de uma tragédia que poderia ter sido evitada}
+      \field{urlday}{24}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.bbc.com/portuguese/brasil-47399659
+      \endverb
+      \verb{url}
+      \verb https://www.bbc.com/portuguese/brasil-47399659
+      \endverb
+    \endentry
+    \entry{vale}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a7dfb2a9d77e269b2b22052211a71542}{%
+           family={{Vale}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7dfb2a9d77e269b2b22052211a71542}
+      \strng{fullhash}{a7dfb2a9d77e269b2b22052211a71542}
+      \strng{fullhashraw}{a7dfb2a9d77e269b2b22052211a71542}
+      \strng{bibnamehash}{a7dfb2a9d77e269b2b22052211a71542}
+      \strng{authorbibnamehash}{a7dfb2a9d77e269b2b22052211a71542}
+      \strng{authornamehash}{a7dfb2a9d77e269b2b22052211a71542}
+      \strng{authorfullhash}{a7dfb2a9d77e269b2b22052211a71542}
+      \strng{authorfullhashraw}{a7dfb2a9d77e269b2b22052211a71542}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cerca de 80\% da produção de minério de ferro da Vale no Brasil não utiliza barragens de rejeitos}
+      \field{urlday}{24}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://vale.com/pt/w/cerca-de-80-porcento-da-producao-de-minerio-de-ferro-da-vale-no-brasil-nao-utiliza-barragens-de-rejeitos
+      \endverb
+      \verb{url}
+      \verb https://vale.com/pt/w/cerca-de-80-porcento-da-producao-de-minerio-de-ferro-da-vale-no-brasil-nao-utiliza-barragens-de-rejeitos
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -19,6 +19,6 @@
 "0","rmspe_stats_filtered <- subset(rmspe_stats, COD_MUN %in% good_units)"
 "0","length(good_units)"
 "1","[1]"
-"1"," 29"
+"1"," 22"
 "1","
 "

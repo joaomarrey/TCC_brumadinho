@@ -37,14 +37,14 @@ print(pib.info())
 
 
 river.plot()
-plt.savefig('bacia_paraopeba.png')
+plt.savefig('Mapa_Rio/bacia_paraopeba.png')
 
 
 # print(list(river['noriocomp']))
 
 rio_paraopeba = river[river['noriocomp'] == 'Rio Paraopeba']
 rio_paraopeba.plot()
-plt.savefig('paraopeba.png')
+plt.savefig('Mapa_Rio/paraopeba.png')
 
 rio_paraopeba = rio_paraopeba.to_crs(pib.crs)
 rio_paraopeba.plot()

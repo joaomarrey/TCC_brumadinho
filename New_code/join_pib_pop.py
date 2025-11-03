@@ -26,7 +26,7 @@ gdp_pop_df[['VA_AGRO_PER_CAPITA', 'VA_IND_PER_CAPITA', 'VA_SERV_PER_CAPITA', 'VA
             'IMPOSTOS_INDIRETOS_LIQ_SUBSIDIOS_PER_CAPITA']] = (
     gdp_pop_df[['VA_AGRO', 'VA_IND', 'VA_SERV', 'VA_ADM', 'VA_TOT', 'IMPOSTOS_INDIRETOS_LIQ_SUBSIDIOS']].div(
     gdp_pop_df['POP'], axis=0
-    ))
+    )) * 1000
 
 gdp_pop_df[['VA_AGRO_SOBRE_VA_TOT', 'VA_IND_SOBRE_VA_TOT', 'VA_SERV_SOBRE_VA_TOT', 'VA_ADM_SOBRE_VA_TOT']] = (
     gdp_pop_df[['VA_AGRO', 'VA_IND', 'VA_SERV', 'VA_ADM']].div(

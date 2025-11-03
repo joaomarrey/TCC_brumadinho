@@ -83,7 +83,6 @@
 "0","  foo = final_df,"
 "0","  predictors = normal_predictors,"
 "0","  special.predictors = special_predictors,"
-"0","  #dependent = ""REMUNERACAO_DEZEMBRO"","
 "0","  dependent = ""LN_REMUNERACAO_MEDIA"","
 "0","  unit.variable = ""COD_MUN"","
 "0","  unit.names.variable = ""NOME_MUN"",   # add this back"

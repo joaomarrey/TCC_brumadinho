@@ -17,7 +17,7 @@ covariates = [
                 # "PROP_POP_EMPREGADA_ESTATUTARIOS",
                 # "PROP_EMPREGADOS__ESTATUTARIOS",
                 "NUM_FIRMAS",
-                "FIRMAS_PER_CAPITA",
+                # "FIRMAS_PER_CAPITA",
                 "POP",
                 #"PROPORCAO_DA_POP_RURAL",
                 #"VA_AGRO_PER_CAPITA", "VA_IND_PER_CAPITA",

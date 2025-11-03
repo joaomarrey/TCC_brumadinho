@@ -1,3 +1,7 @@
+"0","placebo_df_filtered = placebo_df_filtered_prop_emp"
+"0","gap_data = gap_data_prop_emp"
+"0","rmspe_stats_filtered = rmspe_stats_filtered_prop_emp"
+"0","treated_ratio = treated_ratio_prop_emp"
 "0",""
 "0","p_value <- mean(rmspe_stats_filtered$ratio >= treated_ratio, na.rm = TRUE)"
 "0","#p_value <- mean(rmspe_stats_filtered$ratio >= 9, na.rm = TRUE)"

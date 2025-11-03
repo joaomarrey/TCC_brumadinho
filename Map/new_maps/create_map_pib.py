@@ -11,7 +11,7 @@ from paths import matching_data_path, maps_data
 rio_paraopeba = gpd.read_file('Rio_Paraopeba/rio_paraopeba.shp')
 
 # with downstream
-matched = pd.read_csv(os.path.join(matching_data_path, 'matching_k_nearest.csv'))
+matched = pd.read_csv(os.path.join(matching_data_path, 'matching_k_nearest_pib.csv'))
 merged = gpd.read_file(os.path.join(maps_data, 'MG_Municipios_2023.shp'))
 
 downstream = pd.read_csv(os.path.join(matching_data_path, 'downstream_municipios.csv'))
@@ -70,7 +70,7 @@ legend_elements = [
     mpatches.Patch(color='blue', label='Paraopeba River')
 ]
 
-ax.set_title("GDP Synthetic Control Municipalities With Downstream (Minas Gerais State)")
+# ax.set_title("GDP Synthetic Control Municipalities With Downstream (Minas Gerais State)")
 plt.axis('off')
 ax.legend(handles=legend_elements, loc='lower left',
           # title='Treatment and Downstream Municipalities',
@@ -78,14 +78,14 @@ ax.legend(handles=legend_elements, loc='lower left',
           )
 # plt.show()
 plt.tight_layout()
-plt.savefig('pib_municipios_map.png', dpi=500, bbox_inches='tight')
+plt.savefig('Mapas_matching/pib_municipios_map.png', dpi=500, bbox_inches='tight')
 # plt.savefig("pib_vectorized.pdf")
 
-merged.to_file('PIB/pib_municipios_shape.shp')
+#merged.to_file('SHPS_matching/pib_municipios_shape.shp')
 
 
 # no downstream
-matched = pd.read_csv(os.path.join(matching_data_path, 'matching_k_nearest_no_downstream.csv'))
+matched = pd.read_csv(os.path.join(matching_data_path, 'matching_k_nearest_no_downstream_pib.csv'))
 merged = gpd.read_file(os.path.join(maps_data, 'MG_Municipios_2023.shp'))
 
 downstream = pd.read_csv(os.path.join(matching_data_path, 'downstream_municipios.csv'))
@@ -144,7 +144,7 @@ legend_elements = [
     mpatches.Patch(color='blue', label='Paraopeba River')
 ]
 
-ax.set_title("GDP Synthetic Control Municipalities Without Downstream (Minas Gerais State)")
+# ax.set_title("GDP Synthetic Control Municipalities Without Downstream (Minas Gerais State)")
 plt.axis('off')
 ax.legend(handles=legend_elements, loc='lower left',
           # title='Treatment and Downstream Municipalities',
@@ -152,7 +152,7 @@ ax.legend(handles=legend_elements, loc='lower left',
           )
 # plt.show()
 plt.tight_layout()
-plt.savefig('pib_municipios_map_no_dowsntream.png', dpi=500, bbox_inches='tight')
+plt.savefig('Mapas_matching/pib_municipios_map_no_dowsntream.png', dpi=500, bbox_inches='tight')
 # plt.savefig("pib_vectorized.pdf")
 
-merged.to_file('PIB/pib_municipios_shapeno_dowsntream.shp')
+#merged.to_file('SHPS_matching/pib_municipios_shapeno_dowsntream.shp')

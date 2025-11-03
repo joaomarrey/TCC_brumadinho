@@ -242,7 +242,7 @@ ggplot() +
   
   theme_minimal() +
   labs(
-    title = "Treated Unit vs Synthetic Control",
+    #title = "Treated Unit vs Synthetic Control",
     x = "Year",
     y = "GDP Per Capita (R$)"
   ) +
@@ -342,14 +342,17 @@ sp
 sp <- ggplot(gap_data, aes(x = Coefficient, y = Gap, color = Group)) +
   geom_line(aes(group = 1), size = 0.8) +  # <--- this ensures all points are connected
   geom_point(size = 3) +
-  geom_errorbar(aes(ymin = Gap - 1.96 * Std_Error, ymax = Gap + 1.96 * Std_Error),
-                width = 0.2, na.rm = TRUE) +
+  #geom_errorbar(aes(ymin = Gap - 1.96 * Std_Error, ymax = Gap + 1.96 * Std_Error),
+  #              width = 0.2, na.rm = TRUE) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "black") +
-  scale_color_manual(values = c("Pre" = "#E87D72", "Post" = "#56BCC2")) +
+  scale_color_manual(
+    name = "",
+    values = c("Pre" = "#E87D72", "Post" = "#56BCC2")
+    ) +
   scale_x_discrete(breaks = paste0("tr", gap_data$Year),
                    labels = as.character(gap_data$Year)) +
   labs(
-    title = "Gap between Treated Unit and Synthetic Control",
+    #title = "Gap between Treated Unit and Synthetic Control",
     x = "Year",
     y = "Gap in GDP Per Capita (R$)"
   ) +
@@ -429,9 +432,9 @@ for (i in seq_along(cods)) {
       Y1 = unname(Y1),
       Y0s = unname(Y0s),
       Gap = unname(gap),
-      pre_rmspe = pre_rmspe,
-      post_rmspe = post_rmspe,
-      ratio = ratio
+      #pre_rmspe = pre_rmspe,
+      #post_rmspe = post_rmspe,
+      #ratio = ratio
     )
     #print("WORKED")
     #placebo_results[[as.character(treated_cod)]] <- data.frame( Year = years, Gap = gap, COD_MUN = treated_cod, NOME_MUN = treated_name )
@@ -482,8 +485,21 @@ length(good_units)
 ```
 
 
+```{r}
+placebo_df_filtered_gpd = placebo_df_filtered
+gap_data_gdp = gap_data
+rmspe_stats_filtered_gdp = rmspe_stats_filtered
+treated_ratio_gdp = treated_ratio
+```
+
 
 ```{r}
+placebo_df_filtered = placebo_df_filtered_gpd
+gap_data = gap_data_gdp
+rmspe_stats_filtered = rmspe_stats_filtered_gdp
+treated_ratio = treated_ratio_gdp
+num_filtered_placebos = length(unique(placebo_df_filtered$NOME_MUN))
+
 sp <- ggplot() +
   # --- Placebo lines first (gray background lines) ---
   geom_line(data = placebo_df_filtered,
@@ -509,11 +525,27 @@ sp <- ggplot() +
 
   # --- Treatment line + label ---
   geom_vline(xintercept = 2019, linetype = "dotted", color = "black", size = 1) +
-  annotate("text", x = 2019, y = min(gap_data$Gap),
+  annotate("text", x = 2019, y = min(gap_data$Gap, placebo_df_filtered$Gap),
            label = "Treatment Year", hjust = 1.1, vjust = -0.5, size = 3.5) +
+  
+  
+  # --- Add comment about number of placebos ---
+  annotate(
+    "text",
+    x = min(gap_data$Year),   # leftmost x
+    y = min(gap_data$Gap, placebo_df_filtered$Gap),    # topmost y
+    label = paste0("Number of placebo units: ", num_filtered_placebos),
+    hjust = 0, vjust = -0.5,
+    size = 3.5
+    ,
+    color = "gray30"
+  ) +
 
   # --- Scales and labels ---
-  scale_color_manual(values = c("Pre" = "#E87D72", "Post" = "#56BCC2")) +
+  scale_color_manual(
+    name = "",
+    values = c("Pre" = "#E87D72", "Post" = "#56BCC2")
+    ) +
   scale_y_continuous(
     labels = label_number(big.mark = ".", decimal.mark = ",", prefix = "R$ ")
   ) +
@@ -521,7 +553,7 @@ sp <- ggplot() +
 
   # --- Titles and theme ---
   labs(
-    title = "Gaps for Treated and Control Units (Placebo Test)",
+    #title = "Gaps for Treated and Control Units (Placebo Test)",
     subtitle = "Placebo tests in gray; treated unit in color",
     x = "Year",
     y = "Gap in GDP Per Capita (R$)"
@@ -543,6 +575,10 @@ sp
 
 
 ```{r}
+placebo_df_filtered = placebo_df_filtered_gpd
+gap_data = gap_data_gdp
+rmspe_stats_filtered = rmspe_stats_filtered_gdp
+treated_ratio = treated_ratio_gdp
 
 p_value <- mean(rmspe_stats_filtered$ratio >= treated_ratio, na.rm = TRUE)
 #p_value <- mean(rmspe_stats_filtered$ratio >= 9, na.rm = TRUE)
@@ -550,28 +586,72 @@ p_value
 
 ```
 
+
 ```{r}
+placebo_df_filtered = placebo_df_filtered_gpd
+gap_data = gap_data_gdp
+rmspe_stats_filtered = rmspe_stats_filtered_gdp
+treated_ratio = treated_ratio_gdp
+p_value <- mean(rmspe_stats_filtered$ratio >= treated_ratio, na.rm = TRUE)
+
 ggplot(rmspe_stats_filtered, aes(x = ratio)) +
-  geom_histogram(binwidth = 1, fill = "gray70", color = "white", alpha = 0.8) +
-  geom_vline(xintercept = treated_ratio, color = "#E87D72", size = 1.3) +
+  # --- Add custom gray axes ---
+  geom_hline(yintercept = 0, color = "black", linewidth = 0.5) +
+  geom_vline(xintercept = 0, color = "black", linewidth = 0.5) +
+  
+  geom_histogram(
+    aes(fill = "Placebo Tests"), 
+    color = "black",
+    binwidth = 1, alpha = 0.8
+  ) +
+  geom_vline(
+    aes(xintercept = treated_ratio, color = "Treated Unit"),
+    size = 1.3
+  ) +
+  
   annotate("text", x = treated_ratio, y = Inf,
-           label = paste0("Treated (p = ", round(p_value, 3), ")"),
-           vjust = 2, hjust = 1.1, color = "#E87D72", size = 4) +
+           label = paste0("Treated (p-value = ", round(p_value, 3), ")"),
+           hjust = 1.1, vjust = 1,
+           color = "#E87D72", size = 4) +
+  scale_x_continuous(
+    breaks = seq(0, max(treated_ratio, rmspe_stats_filtered$ratio) + 2, by = 2)
+  ) +
+  scale_y_continuous(breaks = breaks_width(1)) +
+  scale_fill_manual(
+    name = "",
+    values = c("Placebo Tests" = "#56BCC2")
+  ) +
+  scale_color_manual(
+    name = "",
+    values = c("Treated Unit" = "#E87D72")
+  ) +
+  guides(
+    fill = guide_legend(order = 1),
+    color = guide_legend(order = 1)
+  ) +
   labs(
-    title = "Placebo Test: Distribution of Post/Pre RMSPE Ratios",
     x = "Post/Pre RMSPE Ratio",
     y = "Number of Units"
   ) +
-  theme_minimal() + 
+  theme_minimal() +
   theme(
-      panel.grid.major.y = element_line(color = "gray95", size = 0.7),
-      panel.grid.minor.y = element_line(color = "gray95", size = 0.3)
-    )
-
+    panel.grid.major.y = element_line(color = "gray95", size = 0.7),
+    panel.grid.minor.y = element_line(color = "gray95", size = 0.3),
+    legend.title = element_blank(),
+    legend.position = "bottom",
+    legend.key.size = unit(0.8, "lines"),
+    #legend.text = element_text(size = 9)
+  )
 ```
 
 
+
 ```{r}
+placebo_df_filtered = placebo_df_filtered_gpd
+gap_data = gap_data_gdp
+rmspe_stats_filtered = rmspe_stats_filtered_gdp
+treated_ratio = treated_ratio_gdp
+
 ggplot(rmspe_stats_filtered, aes(x = ratio)) +
   geom_density(fill = "gray80", alpha = 0.8) +
   geom_vline(xintercept = treated_ratio, color = "#E87D72", size = 1.2) +
@@ -767,7 +847,7 @@ ggplot() +
   
   theme_minimal() +
   labs(
-    title = "Treated Unit vs Synthetic Control",
+    #title = "Treated Unit vs Synthetic Control",
     x = "Year",
     y = "GDP Per Capita (R$)"
   ) +
@@ -862,14 +942,14 @@ sp
 sp <- ggplot(gap_data, aes(x = Coefficient, y = Gap, color = Group)) +
   geom_line(aes(group = 1), size = 0.8) +  # <--- this ensures all points are connected
   geom_point(size = 3) +
-  geom_errorbar(aes(ymin = Gap - 1.96 * Std_Error, ymax = Gap + 1.96 * Std_Error),
-                width = 0.2, na.rm = TRUE) +
+  #geom_errorbar(aes(ymin = Gap - 1.96 * Std_Error, ymax = Gap + 1.96 * Std_Error),
+  #              width = 0.2, na.rm = TRUE) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "black") +
   scale_color_manual(values = c("Pre" = "#E87D72", "Post" = "#56BCC2")) +
   scale_x_discrete(breaks = paste0("tr", gap_data$Year),
                    labels = as.character(gap_data$Year)) +
   labs(
-    title = "Gap between Treated Unit and Synthetic Control",
+    #title = "Gap between Treated Unit and Synthetic Control",
     x = "Year",
     y = "Gap in GDP Per Capita (R$)"
   ) +
