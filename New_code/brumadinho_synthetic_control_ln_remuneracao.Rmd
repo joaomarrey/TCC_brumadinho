@@ -101,7 +101,7 @@ special_predictors = list(
 normal_predictors = c(
     #NULL
                   #"PIB_PER_CAPITA",
-                  "PROP_MEDIA_POP_EMPREGADA",                 
+                  #"PROP_MEDIA_POP_EMPREGADA",                 
                   "POP", 
                   
                   "VA_AGRO_PER_CAPITA", "VA_IND_PER_CAPITA", 
@@ -353,6 +353,73 @@ sp
 
 
 ```{r}
+synth.tables <- synth.tab(dataprep.res = synth_data, synth.res = synth_output)
+```
+
+
+```{r}
+pred_tab = synth.tables$tab.pred
+pred_tab
+```
+
+
+```{r}
+sum_gdp = c(0,0,0)
+count_gdp = 0
+
+sum_wage = c(0,0,0)
+count_wage = 0
+
+for (row in rownames(pred_tab)) {
+  #print(pred_tab[row, ])
+  row_data = pred_tab[row, ]
+  if (grepl("PIB_PER_CAPITA", row)) {
+    sum_gdp = sum_gdp + row_data
+    count_gdp = count_gdp + 1
+  }
+  else if (grepl("LN_REMUNERACAO_MEDIA", row)) {
+    sum_wage = sum_wage + row_data
+    count_wage = count_wage + 1
+  }
+  else {
+    cat(row, "&", row_data["Treated"], "&", row_data["Synthetic"], "&", row_data["Sample Mean"], "\n", "\\\\ \\hline", "\n")
+  }
+}
+
+mean_gdp = sum_gdp/count_gdp
+cat("$GDPPerCapita$", "&", mean_gdp[1], "&", mean_gdp[2], "&", mean_gdp[3], "\n", "\\\\ \\hline", "\n")
+
+mean_wage = sum_wage/count_wage
+cat("$Log WAGE$", "&", mean_wage[1], "&", mean_wage[2], "&", mean_wage[3], "\n", "\\\\ \\hline", "\n")
+
+```
+
+
+```{r}
+weight_tab = synth.tables$tab.w
+weight_tab
+```
+
+
+
+```{r}
+for (i in 1:nrow(weight_tab)) {
+  
+  name = weight_tab[i, "unit.names"]
+  code = weight_tab[i, "unit.numbers"]
+  weight = weight_tab[i, "w.weights"]
+  
+  if (weight >= 0.001){
+    cat(name, "&", code, "&", weight, "\n", "\\\\ \\hline", "\n")
+  }
+  
+}
+
+
+```
+
+
+```{r}
 
 cods = unique(matched_control_group$COD_MUN)
 names = unique(matched_control_group$NOME_MUN)
@@ -469,6 +536,10 @@ treated_ratio_ln_wage = treated_ratio
 ```
 
 
+
+
+
+
 ```{r}
 placebo_df_filtered = placebo_df_filtered_ln_wage
 gap_data = gap_data_ln_wage
@@ -504,7 +575,7 @@ sp <- ggplot() +
   annotate("text", x = 2019, 
            #y = max(gap_data$Gap),
            y = min(gap_data$Gap, placebo_df_filtered$Gap),
-           label = "Treatment Year", hjust = 1.1, vjust = -0.5, size = 3.5) +
+           label = "Treatment Year", hjust = 1.1, vjust = 0.5, size = 3.5) +
   
   # --- Add comment about number of placebos ---
   annotate(
@@ -641,6 +712,324 @@ ggplot(rmspe_stats_filtered, aes(x = ratio)) +
   ) +
   theme_minimal()
 ```
+
+
+## USING LN REMUNERACAO
+###CONTROLE SINTÉTICO SEM DOWNSTREAM
+
+```{r}
+special_predictors = list(
+    list("PIB_PER_CAPITA", 2002, "mean"),
+    list("PIB_PER_CAPITA", 2003, "mean"),
+    list("PIB_PER_CAPITA", 2004, "mean"),
+    list("PIB_PER_CAPITA", 2005, "mean"),
+    list("PIB_PER_CAPITA", 2006, "mean"),
+    list("PIB_PER_CAPITA", 2007, "mean"),
+    list("PIB_PER_CAPITA", 2008, "mean"),
+    list("PIB_PER_CAPITA", 2009, "mean"),
+    list("PIB_PER_CAPITA", 2010, "mean"),
+    list("PIB_PER_CAPITA", 2011, "mean"),
+    list("PIB_PER_CAPITA", 2012, "mean"),
+    list("PIB_PER_CAPITA", 2013, "mean"),
+    list("PIB_PER_CAPITA", 2014, "mean"),
+    list("PIB_PER_CAPITA", 2015, "mean"),
+    list("PIB_PER_CAPITA", 2016, "mean"),
+    list("PIB_PER_CAPITA", 2017, "mean"),
+    list("PIB_PER_CAPITA", 2018, "mean")
+    
+    ,
+    list("LN_REMUNERACAO_MEDIA", 2002, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2003, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2004, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2005, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2006, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2007, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2008, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2009, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2010, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2011, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2012, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2013, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2014, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2015, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2016, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2017, "mean"),
+    list("LN_REMUNERACAO_MEDIA", 2018, "mean")
+    
+#    ,
+    #list("PROP_MEDIA_POP_EMPREGADA", 2002, "mean"),
+    #list("PROP_MEDIA_POP_EMPREGADA", 2003, "mean"),
+    #list("PROP_MEDIA_POP_EMPREGADA", 2004, "mean"),
+    #list("PROP_MEDIA_POP_EMPREGADA", 2005, "mean"),
+    #list("PROP_MEDIA_POP_EMPREGADA", 2006, "mean"),
+#    list("PROP_MEDIA_POP_EMPREGADA", 2007, "mean"),
+#    list("PROP_MEDIA_POP_EMPREGADA", 2008, "mean"),
+#    list("PROP_MEDIA_POP_EMPREGADA", 2009, "mean"),
+#    list("PROP_MEDIA_POP_EMPREGADA", 2010, "mean"),
+#    list("PROP_MEDIA_POP_EMPREGADA", 2011, "mean"),
+#    list("PROP_MEDIA_POP_EMPREGADA", 2012, "mean"),
+#    list("PROP_MEDIA_POP_EMPREGADA", 2013, "mean"),
+#    list("PROP_MEDIA_POP_EMPREGADA", 2014, "mean"),
+#    list("PROP_MEDIA_POP_EMPREGADA", 2015, "mean"),
+#    list("PROP_MEDIA_POP_EMPREGADA", 2016, "mean"),
+#    list("PROP_MEDIA_POP_EMPREGADA", 2017, "mean"),
+#    list("PROP_MEDIA_POP_EMPREGADA", 2018, "mean")
+  )
+
+normal_predictors = c(
+    #NULL
+                  #"PIB_PER_CAPITA",
+                  #"PROP_MEDIA_POP_EMPREGADA",                 
+                  "POP", 
+                  
+                  "VA_AGRO_PER_CAPITA", "VA_IND_PER_CAPITA", 
+                  "VA_SERV_PER_CAPITA", "VA_ADM_PER_CAPITA", 
+                  
+                  "VA_AGRO_SOBRE_VA_TOT", "VA_IND_SOBRE_VA_TOT", 
+                  "VA_SERV_SOBRE_VA_TOT", "VA_ADM_SOBRE_VA_TOT",
+                  
+                  "IDHM_RENDA", "IDHM_LONGEVIDADE", "IDHM_EDU", 
+                  "TRANSF_PER_CAPITA_BOLSA_FAMILIA",
+                  'GINI', 
+                  'TAXA_ALFAB', 
+                  'PROP_MENOS_DE_1_SM', 'PROP_1_A_2_SM', 
+                  'PROP_2_A_5_SM', 'PROP_5_A_10_SM', 'PROP_MAIS_DE_10_SM'
+                 )
+
+#synth_data new matching
+matched_control_group = read.csv(file.path(matching_data_path, 'matching_k_nearest_no_downstream_ln_remuneracao.csv'))
+
+synth_data = dataprep(
+  foo = final_df,
+  predictors = normal_predictors,
+  special.predictors = special_predictors,
+  dependent = "LN_REMUNERACAO_MEDIA",
+  unit.variable = "COD_MUN",
+  unit.names.variable = "NOME_MUN",   # add this back
+  time.variable = "ANO",
+  treatment.identifier = 3109006,     # careful: no quotes, must be numeric if COD_MUN is numeric
+  controls.identifier = matched_control_group$COD_MUN,
+  time.predictors.prior = 2002:2018,
+  time.optimize.ssr = 2002:2018,
+  time.plot = 2002:2024
+)
+```
+
+
+```{r}
+
+synth_output = synth(synth_data)
+
+```
+
+
+```{r}
+Y1 <- synth_data$Y1plot
+Y0s <- synth_data$Y0plot %*% synth_output$solution.w
+years <- synth_data$tag$time.plot
+
+pre_idx <- which(years %in% 2002:2018)
+post_idx <- which(years > max(2002:2018))
+
+treated_pre_rmspe  <- sqrt(mean((Y1[pre_idx] - Y0s[pre_idx])^2, na.rm=TRUE))
+treated_post_rmspe <- sqrt(mean((Y1[post_idx] - Y0s[post_idx])^2, na.rm=TRUE))
+treated_ratio <- ifelse(treated_pre_rmspe == 0, NA, treated_post_rmspe / treated_pre_rmspe)
+treated_ratio
+```
+
+
+```{r}
+path.plot(synth.res = synth_output,
+dataprep.res = synth_data)
+```
+
+
+```{r}
+# Get actual treated series
+Y1  <- synth_data$Y1plot  
+
+# Get synthetic control series
+Y1s <- synth_data$Y0plot %*% synth_output$solution.w  
+
+# Time variable
+time <- synth_data$tag$time.plot
+
+synthetic_df <- data.frame(
+  Year = time,
+  Value = as.numeric(Y1s)
+)
+
+treated_df <- data.frame(
+  Year = time,
+  Value = as.numeric(Y1)
+)
+  
+plot_df <- data.frame(
+  Year = time,
+  Treated = as.numeric(Y1),
+  Synthetic = as.numeric(Y1s)
+)
+```
+
+
+
+```{r}
+ggplot() +
+  # synthetic line and points (dashed)
+  geom_line(data = synthetic_df, aes(x = Year, y = Value, color = "Synthetic Control"), 
+            size = 1.3, linetype = "dashed") +
+  geom_point(data = synthetic_df, aes(x = Year, y = Value, color = "Synthetic Control"), size = 2.5) +
+  
+  # treated line and points (solid)
+  geom_line(data = treated_df, aes(x = Year, y = Value, color = "Treated Unit"), 
+            size = 1.3, linetype = "solid") +
+  geom_point(data = treated_df, aes(x = Year, y = Value, color = "Treated Unit"), size = 2.5) +
+  
+  # vertical line for treatment
+  geom_vline(xintercept = 2019, linetype = "dotted", color = "black", size = 1) +
+  
+  scale_x_continuous(
+    breaks = seq(min(plot_df$Year), max(plot_df$Year), by = 1)
+  ) +
+  scale_y_continuous(
+    breaks = seq(0, max(plot_df$Treated, plot_df$Synthetic), by = 0.5),
+    labels = label_number(big.mark = ".", decimal.mark = ",", prefix = " ")
+  ) +
+  
+  # define custom colors for the legend
+  scale_color_manual(
+    name = "",  # legend title (empty for none)
+    values = c("Treated Unit" = "#56BCC2", "Synthetic Control" = "#E87D72")
+  ) +
+  
+  theme_minimal() +
+  labs(
+    #title = "Treated Unit vs Synthetic Control",
+    x = "Year",
+    y = "Log Average Wage"
+  ) +
+  theme(
+    text = element_text(size = 10),
+    plot.title = element_text(hjust = 0.5),
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.major.y = element_line(color = "gray95", size = 0.7),
+    panel.grid.minor.y = element_line(color = "gray95", size = 0.3),
+    legend.position = "bottom"
+  ) +
+  annotate("text", x = 2019, y = max(plot_df$Treated, plot_df$Synthetic),
+           label = "Treatment Year", hjust = 1.1)
+```
+
+
+```{r}
+gaps.plot(synth.res = synth_output,
+dataprep.res = synth_data)
+```
+
+
+
+```{r}
+
+gap_data = data.frame(
+  Year = plot_df$Year,
+  Gap  = plot_df$Treated - plot_df$Synthetic
+)
+
+
+variance = sum(gap_data[gap_data$Year <= 2018, "Gap"] ^ 2) / (2018 - 2001)
+std_error = variance ^ (1 / 2)
+std_error
+
+# If you have std errors from placebo tests / bootstraps, add them here
+gap_data$Variance = variance
+gap_data$Std_Error = std_error  # placeholder, otherwise use real values
+
+gap_data
+
+```
+
+
+
+
+```{r}
+
+# Label pre vs post
+treatment_year <- 2019
+gap_data$Group <- ifelse(gap_data$Year < treatment_year, "Pre", "Post")
+gap_data$Group <- factor(gap_data$Group, levels = c("Pre", "Post"))
+
+# Convert Year to a fake "Coefficient" column like your DiD code
+gap_data$Coefficient <- paste0("tr", gap_data$Year)
+
+# Plot (exact same style as your DiD)
+sp <- ggplot(gap_data, aes(x = Coefficient, y = Gap,
+                           ymin = Gap - 1.96 * Std_Error,
+                           ymax = Gap + 1.96 * Std_Error,
+                           color = Group)) +
+  geom_point(size = 3) +
+  geom_errorbar(width = 0.2, na.rm = TRUE) +  # will show only if Std_Error available
+  geom_hline(yintercept = 0, linetype = "dashed", color = "black") +
+  labs(title = "", x = "Coefficient", y = "Gap") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+sp <- sp + scale_color_manual(values = c("Pre" = "#E87D72", "Post" = "#56BCC2"))
+
+sp <- sp + theme(panel.grid = element_blank())
+sp <- sp + theme(axis.line = element_line(), axis.ticks = element_line())
+sp <- sp + theme(
+  axis.title = element_blank(),
+  axis.text.x = element_text(size = 12, color = "black", hjust = 0.5, angle = -45),
+  axis.text.y = element_text(size = 12, color = "black")
+)
+
+# Make x-axis nice with actual years
+sp <- sp + scale_x_discrete(
+  breaks = paste0("tr", gap_data$Year),
+  labels = as.character(gap_data$Year)
+)
+
+sp <- sp + theme(legend.position = "bottom", legend.title = element_blank())
+sp
+```
+
+
+```{r}
+sp <- ggplot(gap_data, aes(x = Coefficient, y = Gap, color = Group)) +
+  geom_line(aes(group = 1), size = 0.8) +  # <--- this ensures all points are connected
+  geom_point(size = 3) +
+  #geom_errorbar(aes(ymin = Gap - 1.96 * Std_Error, ymax = Gap + 1.96 * Std_Error),
+  #              width = 0.2, na.rm = TRUE) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "black") +
+  scale_color_manual(
+    name = "",
+    values = c("Pre" = "#E87D72", "Post" = "#56BCC2")
+    ) +
+  scale_x_discrete(breaks = paste0("tr", gap_data$Year),
+                   labels = as.character(gap_data$Year)) +
+  labs(
+    #title = "Gap between Treated Unit and Synthetic Control",
+    x = "Year",
+    y = "Gap in Log Average Wage"
+  ) +
+  scale_y_continuous(
+    labels = label_number(big.mark = ".", decimal.mark = ",", prefix = " ")
+  ) +
+  theme_minimal() +
+  theme(text = element_text(size = 10),
+        plot.title = element_text(hjust = 0.5),
+        axis.text.x = element_text(angle = 45, hjust = 1),
+        panel.grid.major.y = element_line(color = "gray95", size = 0.7),
+        panel.grid.minor.y = element_line(color = "gray95", size = 0.3),
+        legend.position = "bottom") +
+  annotate("text", x = "tr2019", y = 1.5*min(gap_data$Gap), label = "Treatment Year", hjust = 1.1)+
+  geom_vline(xintercept = which(levels(factor(gap_data$Coefficient)) == "tr2019"), 
+           linetype = "dotted", color = "black", size = 1)
+  #geom_vline(xintercept = 2019, linetype = "dotted", color = "black", size = 1)
+sp
+```
+
+
 
 
 

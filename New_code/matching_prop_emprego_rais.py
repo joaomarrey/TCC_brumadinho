@@ -9,24 +9,24 @@ import numpy as np
 covariates = [
                 "PROP_POP_EMPREGADA",
                 # "VINCULOS_ATIVOS",
-                "REMUNERACAO_MEDIA",
+                #"REMUNERACAO_MEDIA",
                 #"REMUNERACAO_DEZEMBRO",
                 "PIB_PER_CAPITA",
                 #"PROP_POP_EMPREGADA_CLT",
                 #"PROP_EMPREGADOS_CLT",
                 # "PROP_POP_EMPREGADA_ESTATUTARIOS",
                 # "PROP_EMPREGADOS__ESTATUTARIOS",
-                "NUM_FIRMAS",
+                # "NUM_FIRMAS",
                 # "FIRMAS_PER_CAPITA",
                 "POP",
                 #"PROPORCAO_DA_POP_RURAL",
-                #"VA_AGRO_PER_CAPITA", "VA_IND_PER_CAPITA",
-                #"VA_SERV_PER_CAPITA", "VA_ADM_PER_CAPITA",
+                "VA_AGRO_PER_CAPITA", "VA_IND_PER_CAPITA",
+                "VA_SERV_PER_CAPITA", "VA_ADM_PER_CAPITA",
                 #"IMPOSTOS_INDIRETOS_LIQ_SUBSIDIOS_PER_CAPITA",
-                #"VA_AGRO_SOBRE_VA_TOT",
-                #"VA_IND_SOBRE_VA_TOT",
-                #"VA_SERV_SOBRE_VA_TOT",
-                #"VA_ADM_SOBRE_VA_TOT",
+                "VA_AGRO_SOBRE_VA_TOT",
+                "VA_IND_SOBRE_VA_TOT",
+                "VA_SERV_SOBRE_VA_TOT",
+                "VA_ADM_SOBRE_VA_TOT",
                 #"EXP_VIDA_AO_NASCER",
                 #"MORTALIDADE_INFANTIL",
                 "IDHM_RENDA",
@@ -36,10 +36,10 @@ covariates = [
                 'GINI',
                 'TAXA_ALFAB',
                 'PROP_MENOS_DE_1_SM',
-                #'PROP_1_A_2_SM',
-                #'PROP_2_A_5_SM',
-                #'PROP_5_A_10_SM',
-                #'PROP_MAIS_DE_10_SM',
+                'PROP_1_A_2_SM',
+                'PROP_2_A_5_SM',
+                'PROP_5_A_10_SM',
+                'PROP_MAIS_DE_10_SM',
                 #'VA_AGRO', 'VA_IND', 'VA_SERV', 'VA_ADM',
                 #'VA_TOT'
                                                                             ]
@@ -90,11 +90,21 @@ for mun in ind:
     # print(matching_pivot_standard.loc[mun, :] - matching_pivot_standard.loc[('Brumadinho', 3109006), :])
 
     ## calculates standard diff
-    # diff_vector = np.array([matching_pivot_standard.loc[mun, :] - matching_pivot_standard.loc[('Brumadinho', 3109006), :]])
+    # diff_vector_1 = np.array([matching_pivot_standard.loc[mun, :] - matching_pivot_standard.loc[('Brumadinho', 3109006), :]])
+    # diff_vector_2 = np.array([(emprego_caged_pivot_standard.loc[mun[1], :] - emprego_caged_pivot_standard.loc[3109006, :])])
 
     ## calculates percent diff
-    diff_vector = np.array([(matching_pivot_standard.loc[mun, :] / matching_pivot_standard.loc[('Brumadinho', 3109006), :]) - 1])
+    diff_vector = np.array(
+        [(matching_pivot_standard.loc[mun, :] / matching_pivot_standard.loc[('Brumadinho', 3109006), :]) - 1])
+    # print(diff_vector_1)
 
+    # try:
+    #     diff_vector_2 = np.array([(emprego_caged_pivot_standard.loc[mun[1],:] / emprego_caged_pivot_standard.loc[3109006, :]) - 1])
+    #     # print(diff_vector_2)
+    #
+    #     diff_vector = np.concatenate((diff_vector[0], diff_vector_2[0]))
+    # except:
+    #     continue
 
     # print(diff_vector)
     # raise Exception
@@ -134,8 +144,8 @@ matched_no_downstream = matched[~matched['COD_MUN'].isin(downstream['COD_MUN'])]
 k_nearest_no_downstream = matched_no_downstream.iloc[:30, 0:2]
 
 
-matching_pivot.to_csv(os.path.join(matching_data_path, 'matching_pivot_prop_pop_emprego_rais.csv'))
-matching_pivot_standard.to_csv(os.path.join(matching_data_path, 'matching_pivot_standard_prop_pop_emprego_rais.csv'))
+# matching_pivot.to_csv(os.path.join(matching_data_path, 'matching_pivot_prop_pop_emprego_rais.csv'))
+# matching_pivot_standard.to_csv(os.path.join(matching_data_path, 'matching_pivot_standard_prop_pop_emprego_rais.csv'))
 matched.to_csv(os.path.join(matching_data_path, 'matched_distance_prop_pop_emprego_rais.csv'), index=False)
 k_nearest.to_csv(os.path.join(matching_data_path, 'matching_k_nearest_prop_pop_emprego_rais.csv'), index=False)
 

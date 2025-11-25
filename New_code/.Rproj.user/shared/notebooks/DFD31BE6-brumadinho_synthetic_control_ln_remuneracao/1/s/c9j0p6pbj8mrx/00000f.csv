@@ -59,7 +59,7 @@
 "0","normal_predictors = c("
 "0","    #NULL"
 "0","                  #""PIB_PER_CAPITA"","
-"0","                  ""PROP_MEDIA_POP_EMPREGADA"",                 "
+"0","                  #""PROP_MEDIA_POP_EMPREGADA"",                 "
 "0","                  ""POP"", "
 "0","                  "
 "0","                  ""VA_AGRO_PER_CAPITA"", ""VA_IND_PER_CAPITA"", "
@@ -93,26 +93,6 @@
 "0","  time.optimize.ssr = 2002:2018,"
 "0","  time.plot = 2002:2024"
 "0",")"
-"1","
- Missing data- treated unit; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2002 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data- treated unit; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2003 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data- treated unit; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2004 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data- treated unit; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2005 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data- treated unit; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2006 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
 "1","
  Missing data- treated unit; predictor: IDHM_RENDA ; for period: 2002 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
@@ -802,42 +782,6 @@
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
 "1","
- Missing data - control unit: 3104205 ; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2002 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3104205 ; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2003 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3104205 ; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2004 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3104205 ; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2005 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3104205 ; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2006 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3105400 ; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2002 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3105400 ; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2003 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3105400 ; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2004 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3105400 ; predictor: PROP_MEDIA_POP_EMPREGADA ; for period: 2005 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
  Missing data - control unit: 3104205 ; predictor: IDHM_RENDA ; for period: 2002 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
@@ -911,10 +855,6 @@
 "
 "1","
  Missing data - control unit: 3105400 ; predictor: IDHM_RENDA ; for period: 2004 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3105400 ; predictor: IDHM_RENDA ; for period: 2005 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
 "1","
@@ -994,10 +934,6 @@
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
 "1","
- Missing data - control unit: 3105400 ; predictor: IDHM_LONGEVIDADE ; for period: 2005 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
  Missing data - control unit: 3104205 ; predictor: IDHM_EDU ; for period: 2002 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
@@ -1074,10 +1010,6 @@
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
 "1","
- Missing data - control unit: 3105400 ; predictor: IDHM_EDU ; for period: 2005 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
  Missing data - control unit: 3104205 ; predictor: TRANSF_PER_CAPITA_BOLSA_FAMILIA ; for period: 2002 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
@@ -1135,10 +1067,6 @@
 "
 "1","
  Missing data - control unit: 3105400 ; predictor: TRANSF_PER_CAPITA_BOLSA_FAMILIA ; for period: 2004 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3105400 ; predictor: TRANSF_PER_CAPITA_BOLSA_FAMILIA ; for period: 2005 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
 "1","
@@ -1218,10 +1146,6 @@
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
 "1","
- Missing data - control unit: 3105400 ; predictor: GINI ; for period: 2005 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
  Missing data - control unit: 3104205 ; predictor: TAXA_ALFAB ; for period: 2002 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
@@ -1295,10 +1219,6 @@
 "
 "1","
  Missing data - control unit: 3105400 ; predictor: TAXA_ALFAB ; for period: 2004 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3105400 ; predictor: TAXA_ALFAB ; for period: 2005 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
 "1","
@@ -1378,10 +1298,6 @@
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
 "1","
- Missing data - control unit: 3105400 ; predictor: PROP_MENOS_DE_1_SM ; for period: 2005 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
  Missing data - control unit: 3104205 ; predictor: PROP_1_A_2_SM ; for period: 2002 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
@@ -1455,10 +1371,6 @@
 "
 "1","
  Missing data - control unit: 3105400 ; predictor: PROP_1_A_2_SM ; for period: 2004 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3105400 ; predictor: PROP_1_A_2_SM ; for period: 2005 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
 "1","
@@ -1538,10 +1450,6 @@
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
 "1","
- Missing data - control unit: 3105400 ; predictor: PROP_2_A_5_SM ; for period: 2005 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
  Missing data - control unit: 3104205 ; predictor: PROP_5_A_10_SM ; for period: 2002 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
@@ -1618,10 +1526,6 @@
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
 "1","
- Missing data - control unit: 3105400 ; predictor: PROP_5_A_10_SM ; for period: 2005 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
  Missing data - control unit: 3104205 ; predictor: PROP_MAIS_DE_10_SM ; for period: 2002 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
@@ -1695,9 +1599,5 @@
 "
 "1","
  Missing data - control unit: 3105400 ; predictor: PROP_MAIS_DE_10_SM ; for period: 2004 
- We ignore (na.rm = TRUE) all missing values for predictors.op.
-"
-"1","
- Missing data - control unit: 3105400 ; predictor: PROP_MAIS_DE_10_SM ; for period: 2005 
  We ignore (na.rm = TRUE) all missing values for predictors.op.
 "
